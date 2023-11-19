@@ -1,0 +1,27 @@
+[
+  {
+    "id": "1",
+    "title": "Cours privé",
+    "content": [
+      "Petites explications",
+      "Travailler sur posture / partie du corps",
+      "Possibilité de réaliser un cours en duo ou petit groupe"
+    ]
+  },
+  {
+    "id": "2",
+    "title": "Cours en ligne",
+    "content": [
+      "Petites explications",
+      "Possibilité de réaliser un cours en duo ou petit groupe"
+    ]
+  },
+  {
+    "id": "3",
+    "title": "Programme et suivi",
+    "content": [
+      "Un accompagnement via des fichiers PDF, des échanges Whatsapp + visio",
+      "Pour évoluer dans votre pratique"
+    ]
+  }
+]
