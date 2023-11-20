@@ -1,21 +1,39 @@
 import ana_tournesol from '../../assets/Ana_tournesol.jpeg';
 import ana_img from '../../assets/Ana.jpeg';
+import silhouette_yoga from '../../assets/Yoga-Silhouette.svg';
 import Button from '../../components/Button/button';
+import './home.css';
 const prestation_array = require('../../datas/home_prestations.json');
 
 function Home() {
   return (
     <div className="home">
       <div className="accueil">
-        <img
-          src={ana_tournesol}
-          alt="Ana dans les tournesols"
-          className="img_ana_tournesol"
-        />
-        <h1 className="title">Yoga avec Ana</h1>
-        <p className="presentation">
-          Petite phrase de présentation de Yoga avec Ana !
-        </p>
+        <div className="intro">
+          <div className="img_container">
+            <img
+              src={ana_tournesol}
+              alt="Ana dans les tournesols"
+              className="img_ana_tournesol"
+            />
+          </div>
+          <div className="intro_txt">
+            <h1 className="title">
+              <span>Ana Kuzelj</span> <br /> Professeure de yoga fonctionnel
+            </h1>
+            <p className="presentation">
+              Petite phrase de présentation de Yoga avec Ana ! Lorem ipsum dolor
+              sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+              incididunt ut labore et dolore magna aliqua. Ut enim ad minim
+              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
+              ex ea commodo consequat.
+            </p>
+            <a href="mailto:yoga-avec-ana@outlook.com">
+              <button className="button_papote">On papote ?</button>
+            </a>
+          </div>
+        </div>
+
         <p className="home_paragraphe">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
           eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
@@ -25,6 +43,11 @@ function Home() {
           pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
           culpa qui officia deserunt mollit anim id est laborum.
         </p>
+        <img
+          src={silhouette_yoga}
+          alt="silhouette yoga"
+          className="silhouette_yoga"
+        />
       </div>
 
       <section className="prestations">
@@ -52,25 +75,7 @@ function Home() {
         <Button value={'Découvrir Ana'} link_to="/a_propos" />
       </div>
 
-      <div className="contact">
-        <h3 className="title_contact">Contact</h3>
-        <form action="/ma-page-de-traitement" method="post">
-          <ul>
-            <li>
-              <label for="name">Nom&nbsp;:</label>
-              <input type="text" id="name" name="user_name" />
-            </li>
-            <li>
-              <label for="mail">E-mail&nbsp;:</label>
-              <input type="email" id="mail" name="user_email" />
-            </li>
-            <li>
-              <label for="msg">Message&nbsp;:</label>
-              <textarea id="msg" name="user_message"></textarea>
-            </li>
-          </ul>
-        </form>
-      </div>
+      <div className="contact"></div>
     </div>
   );
 }

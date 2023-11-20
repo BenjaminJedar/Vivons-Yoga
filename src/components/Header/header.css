@@ -1,0 +1,33 @@
+.headerSection {
+  font-family: 'Nunito', sans-serif;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 30px 40px;
+  height: 10px;
+  background-color: #abb194;
+}
+
+.headerLogo {
+  height: 50px;
+}
+
+.headerNav {
+  display: flex;
+  margin-left: 50px;
+  align-items: center;
+}
+
+.lien {
+  color: #f8f4ef;
+  text-decoration: none;
+  font-size: 19px;
+  margin-left: 50px;
+}
+
+.active {
+  text-decoration: underline;
+}
+
+@media (max-width: 640px) {
+}

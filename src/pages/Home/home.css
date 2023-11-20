@@ -1,0 +1,90 @@
+.home {
+  font-family: 'Nunito', sans-serif;
+  background-color: #f8f4ef;
+  color: #848973;
+  margin: 0;
+  padding: 50px 0;
+}
+
+span {
+  font-style: italic;
+}
+
+.accueil,
+.prestations,
+.mini_a_propos,
+.contact {
+  padding: 0 80px;
+}
+
+.intro {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 100px 30px 100px;
+}
+
+.title {
+  margin: 0;
+}
+
+.img_container {
+  display: flex;
+  justify-content: center;
+  margin-right: 60px;
+}
+
+.img_ana_tournesol {
+  height: 400px;
+  border-radius: 50px;
+}
+
+.intro_txt {
+  width: 50%;
+  height: 80%;
+  margin-right: 80px;
+}
+
+.button_papote {
+  font-family: 'Nunito', sans-serif;
+  transition: ease-in-out 0.3s;
+  margin: 0 20px;
+  background-color: #f8f4ef;
+  padding: 10px;
+  border: 2px solid #848973;
+  border-radius: 30px;
+  color: #848973;
+  font-size: 14px;
+  font-weight: bolder;
+}
+
+.button_papote:hover {
+  transform: scale(110%);
+  transition: ease-in-out 0.3s;
+  cursor: pointer;
+  background-color: #b4b1c6;
+  border: 2px solid #b4b1c6;
+  color: #f8f4ef;
+}
+
+.home_paragraphe {
+  background-color: #b4b1c6;
+  color: #f8f4ef;
+  padding: 40px;
+  border-radius: 200px 60px 120px 70px;
+}
+
+.silhouette_yoga {
+  height: 300px;
+  border: 2px solid red;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.prestations {
+  padding: 0 80px;
+}
+
+.ana_img {
+  height: 500px;
+}
