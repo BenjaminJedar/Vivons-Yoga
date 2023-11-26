@@ -51,14 +51,16 @@ function Home() {
       </div>
 
       <section className="prestations">
-        {prestation_array.map((presta) => (
-          <div className="card" key={presta.id}>
-            <h3 className="card_home_title">{presta.title}</h3>
-            {presta.content.map((description) => (
-              <p className="card_home_content">{description}</p>
-            ))}
-          </div>
-        ))}
+        <div className="prestations_card_container">
+          {prestation_array.map((presta) => (
+            <div className="prestations_card" key={presta.id}>
+              <h3 className="card_home_title">{presta.title}</h3>
+              {presta.content.map((description) => (
+                <p className="card_home_content">{description}</p>
+              ))}
+            </div>
+          ))}
+        </div>
 
         <Button value={'En savoir plus !'} link_to="/prestations" />
       </section>
@@ -72,7 +74,11 @@ function Home() {
           minim veniam, quis nostrud exercitation ullamco laboris nisi ut
           aliquip ex ea commodo consequat.
         </p>
-        <Button value={'Découvrir Ana'} link_to="/a_propos" />
+        <Button
+          value={'Découvrir Ana'}
+          link_to="/a_propos"
+          className="a_propos_btn"
+        />
       </div>
 
       <div className="contact"></div>

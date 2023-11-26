@@ -11,8 +11,8 @@ function Header() {
         <Logo className="headerLogo" />
         <nav className="headerNav">
           <Link
-            to="/home"
-            className={location.pathname === '/home' ? 'lien active' : 'lien'}
+            to="/"
+            className={location.pathname === '/' ? 'lien active' : 'lien'}
           >
             Accueil
           </Link>
