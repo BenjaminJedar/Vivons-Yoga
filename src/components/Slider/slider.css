@@ -1,0 +1,15 @@
+.slider {
+  margin-top: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.arrow {
+  height: 30px;
+  margin: 20px;
+}
+
+.arrow:hover {
+  cursor: pointer;
+}

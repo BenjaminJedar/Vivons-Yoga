@@ -2,6 +2,8 @@ import ana_tournesol from '../../assets/Ana_tournesol.jpeg';
 import ana_img from '../../assets/Ana.jpeg';
 import silhouette_yoga from '../../assets/Yoga-Silhouette.svg';
 import Button from '../../components/Button/button';
+import Card from '../../components/Card/card';
+import Slider from '../../components/Slider/slider';
 import './home.css';
 const prestation_array = require('../../datas/home_prestations.json');
 
@@ -51,29 +53,43 @@ function Home() {
       </div>
 
       <section className="prestations">
+        <h2 className="prestations.title">Mes préstations</h2>
         <div className="prestations_card_container">
           {prestation_array.map((presta) => (
-            <div className="prestations_card" key={presta.id}>
-              <h3 className="card_home_title">{presta.title}</h3>
-              {presta.content.map((description) => (
-                <p className="card_home_content">{description}</p>
-              ))}
-            </div>
+            <Card
+              key={presta.id}
+              title={presta.title}
+              content={presta.content}
+              className="card prestations_card"
+            />
           ))}
         </div>
 
-        <Button value={'En savoir plus !'} link_to="/prestations" />
+        <Button
+          value={'En savoir plus !'}
+          link_to="/prestations"
+          className="presta_btn"
+        />
       </section>
 
       <div className="mini_a_propos">
-        <h3 className="title_mini_a_propos">Qui se cache derrière Ana ?</h3>
-        <img src={ana_img} alt="Presentation d'Ana" className="ana_img" />
-        <p className="mini_a_propos_content">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat.
-        </p>
+        <h2 className="title_mini_a_propos">Qui se cache derrière Ana ?</h2>
+        <div className="mini_a_propos_content">
+          <p className="mini_a_propos_p">
+            Lectus urna duis convallis convallis. Sagittis vitae et leo duis ut.
+            At imperdiet dui accumsan sit amet. Pretium viverra suspendisse
+            potenti nullam. In aliquam sem fringilla ut morbi tincidunt augue.
+            Egestas quis ipsum suspendisse ultrices gravida dictum. Ridiculus
+            mus mauris vitae ultricies leo integer. Enim sit amet venenatis
+            urna. Diam maecenas sed enim ut sem viverra. Sit amet consectetur
+            adipiscing elit duis.
+          </p>
+          <img
+            src={ana_img}
+            alt="Presentation d'Ana"
+            className="ana_img portrait"
+          />
+        </div>
         <Button
           value={'Découvrir Ana'}
           link_to="/a_propos"
@@ -81,7 +97,14 @@ function Home() {
         />
       </div>
 
-      <div className="contact"></div>
+      <section className="recommendations">
+        <h2 className="recommendations_title">Témoignages</h2>
+        <Slider />
+      </section>
+
+      <div className="contact">
+        <h2 className="contact_title">N'hésite pas à me contacter ! </h2>
+      </div>
     </div>
   );
 }

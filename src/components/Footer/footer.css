@@ -3,17 +3,30 @@
   background-color: #848973;
   color: #f8f4ef;
   height: 150px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .logos {
   display: flex;
-  width: 50%;
+}
+
+.logos:hover {
+  cursor: pointer;
 }
 
 .logo {
   height: 30px;
+  margin: 0 20px;
 }
 
 .logo_copyright {
-  height: 20px;
+  margin: 4px;
+}
+
+.copyright {
+  display: flex;
+  align-items: center;
 }

@@ -13,8 +13,17 @@ span {
 .accueil,
 .prestations,
 .mini_a_propos,
+.recommendations,
 .contact {
   padding: 0 80px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 18px;
 }
 
 .intro {
@@ -55,7 +64,11 @@ span {
   border-radius: 30px;
   color: #848973;
   font-size: 14px;
-  font-weight: bolder;
+  box-shadow:
+    rgba(0, 0, 0, 0.1) 0px 0px 0px 1px,
+    rgba(0, 0, 0, 0.04) 0px 3px 3px,
+    rgba(0, 0, 0, 0.04) 0px 6px 6px,
+    rgba(0, 0, 0, 0.04) 0px 12px 12px;
 }
 
 .button_papote:hover {
@@ -65,6 +78,11 @@ span {
   background-color: #b4b1c6;
   border: 2px solid #b4b1c6;
   color: #f8f4ef;
+  box-shadow:
+    rgba(0, 0, 0, 0.1) 0px 0px 0px 1px,
+    rgba(0, 0, 0, 0.04) 0px 3px 3px,
+    rgba(0, 0, 0, 0.04) 0px 6px 6px,
+    rgba(0, 0, 0, 0.04) 0px 12px 12px;
 }
 
 .home_paragraphe {
@@ -83,34 +101,42 @@ span {
   position: absolute;
   top: 89%;
   left: 83%;
+  fill: red;
 }
 
 .prestations {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin-top: 80px;
+  justify-content: space-between;
+  margin-top: 50px;
 }
 
 .prestations_card_container {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 40px;
 }
 
-.prestations_card {
-  width: 50%;
-  padding: 0 20px;
-  border-radius: 10px;
-  box-shadow:
-    rgba(0, 0, 0, 0.1) 0px 0px 0px 1px,
-    rgba(0, 0, 0, 0.04) 0px 3px 3px,
-    rgba(0, 0, 0, 0.04) 0px 6px 6px,
-    rgba(0, 0, 0, 0.04) 0px 12px 12px;
+.mini_a_propos {
+  background-color: #8489733b;
+  margin: 80px 60px;
+  padding: 50px;
+  border-radius: 120px;
 }
 
-.a_propos_btn {
+.mini_a_propos_content {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
 }
 
 .ana_img {
-  height: 500px;
+  margin-top: 20px;
+  height: 200px;
+  border-radius: 20px;
+}
+
+.recommendations_title {
+  text-align: center;
 }

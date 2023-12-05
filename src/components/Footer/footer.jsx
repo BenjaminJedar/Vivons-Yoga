@@ -15,12 +15,14 @@ function Footer() {
         <img src={logo_mail} alt="logo mail" className="logo logo_mail" />
       </div>
 
-      <p>Yoga avec Ana | copyright 2023 </p>
-      <img
-        src={logo_copyright}
-        alt="logo copyright"
-        className="logo_copyright"
-      />
+      <p className="copyright">
+        Yoga avec Ana | copyright 2023
+        <img
+          src={logo_copyright}
+          alt="logo copyright"
+          className="logo_copyright"
+        />
+      </p>
     </div>
   );
 }
