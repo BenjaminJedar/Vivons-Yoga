@@ -1,6 +1,6 @@
 import ana_tournesol from '../../assets/Ana_tournesol.jpeg';
 import ana_img from '../../assets/Ana.jpeg';
-import silhouette_yoga from '../../assets/Yoga-Silhouette.svg';
+
 import Button from '../../components/Button/button';
 import Card from '../../components/Card/card';
 import Slider from '../../components/Slider/slider';
@@ -45,11 +45,6 @@ function Home() {
           pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
           culpa qui officia deserunt mollit anim id est laborum.
         </p>
-        <img
-          src={silhouette_yoga}
-          alt="silhouette yoga"
-          className="silhouette_yoga"
-        />
       </div>
 
       <section className="prestations">
@@ -104,6 +99,22 @@ function Home() {
 
       <div className="contact">
         <h2 className="contact_title">N'hésite pas à me contacter ! </h2>
+        <form action="/ma-page-de-traitement" method="post">
+          <ul>
+            <li>
+              <label for="name">Prenom + Nom :</label>
+              <input type="text" id="name" name="user_name" />
+            </li>
+            <li>
+              <label for="mail">E-mail :</label>
+              <input type="email" id="mail" name="user_mail" />
+            </li>
+            <li>
+              <label for="msg">Message :</label>
+              <textarea id="msg" name="user_message"></textarea>
+            </li>
+          </ul>
+        </form>
       </div>
     </div>
   );

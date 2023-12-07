@@ -1,5 +1,5 @@
 .headerSection {
-  font-family: 'Nunito', sans-serif;
+  font-family: 'faustina', sans-serif;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -9,8 +9,10 @@
   border-bottom: 1px solid rgba(0, 0, 0, 0.2);
 }
 
-.headerLogo {
-  height: 50px;
+.logo_AK {
+  margin-left: -50px;
+  margin-top: 15px;
+  height: 140px;
 }
 
 .headerNav {
@@ -20,7 +22,7 @@
 }
 
 .lien {
-  color: #848973;
+  color: #54361b;
   text-decoration: none;
   font-size: 19px;
   margin-left: 50px;

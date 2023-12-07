@@ -1,13 +1,13 @@
 .home {
-  font-family: 'Nunito', sans-serif;
+  font-family: 'faustina', sans-serif;
   background-color: #f8f4ef;
-  color: #848973;
+  color: #54361b;
   margin: 0;
   padding: 60px 0;
 }
 
 span {
-  font-style: italic;
+  font-family: 'Young Serif';
 }
 
 .accueil,
@@ -86,7 +86,7 @@ h3 {
 }
 
 .home_paragraphe {
-  background-color: #b4b1c6;
+  background-color: #184740;
   color: #f8f4ef;
   padding: 40px;
   border-radius: 200px 60px 120px 70px;
@@ -101,7 +101,6 @@ h3 {
   position: absolute;
   top: 89%;
   left: 83%;
-  fill: red;
 }
 
 .prestations {
