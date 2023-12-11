@@ -1,6 +1,6 @@
 import { Link } from 'react-router-dom';
 import { useLocation } from 'react-router-dom';
-import logo_AK from '../../assets/logo_AK_removebg.png';
+import logo_AK from '../../assets/logo_AK_removebg1.png';
 import './header.css';
 
 function Header() {
@@ -8,10 +8,7 @@ function Header() {
   return (
     <div>
       <div className="headerSection">
-        <Link
-          to="/"
-          className={location.pathname === '/' ? 'lien active' : 'lien'}
-        >
+        <Link to="/">
           <img src={logo_AK} className="logo_AK" alt="logo AK" />
         </Link>
         <nav className="headerNav">
@@ -24,21 +21,16 @@ function Header() {
             Qui suis-je ?
           </Link>
           <Link
-            to="/prestation"
+            to="/prestations"
             className={
-              location.pathname === '/prestation' ? 'lien active' : 'lien'
+              location.pathname === '/prestations' ? 'lien active' : 'lien'
             }
           >
             Mes préstations
           </Link>
-          <Link
-            to="/contact"
-            className={
-              location.pathname === '/contact' ? 'lien active' : 'lien'
-            }
-          >
+          <a href="../#contact" className="lien_contact">
             Contact
-          </Link>
+          </a>
         </nav>
       </div>
     </div>

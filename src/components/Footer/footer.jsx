@@ -12,7 +12,9 @@ function Footer() {
           alt="logo instagram"
           className="logo logo_instagram"
         />
-        <img src={logo_mail} alt="logo mail" className="logo logo_mail" />
+        <a href="mailto:yoga-avec-ana@outlook.com">
+          <img src={logo_mail} alt="logo mail" className="logo logo_mail" />
+        </a>
       </div>
 
       <p className="copyright">

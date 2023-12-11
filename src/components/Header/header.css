@@ -10,9 +10,7 @@
 }
 
 .logo_AK {
-  margin-left: -50px;
-  margin-top: 15px;
-  height: 140px;
+  height: 55px;
 }
 
 .headerNav {
@@ -21,7 +19,8 @@
   align-items: center;
 }
 
-.lien {
+.lien,
+.lien_contact {
   color: #54361b;
   text-decoration: none;
   font-size: 19px;

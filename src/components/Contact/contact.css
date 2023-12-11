@@ -1,0 +1,33 @@
+.form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #184740;
+  border-radius: 20px;
+  padding: 20px;
+  width: 50%;
+  box-shadow:
+    rgba(0, 0, 0, 0.1) 0px 0px 0px 1px,
+    rgba(0, 0, 0, 0.04) 0px 3px 3px,
+    rgba(0, 0, 0, 0.04) 0px 6px 6px,
+    rgba(0, 0, 0, 0.04) 0px 12px 12px;
+}
+
+.form input,
+textarea {
+  border-radius: 20px;
+  border: 1px solid #54361b;
+  background-color: #f8f4ef;
+  padding: 10px;
+  margin: 5px;
+}
+
+.form textarea {
+  resize: none;
+  height: 150px;
+}
+
+.button_envoyer {
+  margin-top: 10px;
+  width: 20%;
+}
