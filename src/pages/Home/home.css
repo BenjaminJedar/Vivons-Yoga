@@ -6,6 +6,9 @@
   padding: 60px 0;
 }
 
+* {
+  scroll-behavior: smooth;
+}
 span {
   font-family: 'Young Serif';
 }
@@ -28,9 +31,11 @@ h3 {
 
 .intro {
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  margin-bottom: 60px;
+  /*   justify-content: space-between;
   padding: 0 100px 30px 100px;
+ */
 }
 
 .title {
@@ -40,18 +45,21 @@ h3 {
 .img_container {
   display: flex;
   justify-content: center;
-  margin-right: 60px;
+  margin-right: 100px;
+  margin-left: 150px;
 }
 
 .img_ana_tournesol {
-  height: 400px;
+  height: 400px; /* 400px */
   border-radius: 50px;
 }
 
 .intro_txt {
   width: 50%;
   height: 80%;
-  margin-right: 80px;
+  /*   margin-right: 80px;
+ */
+  border: 1px solid red;
 }
 
 .button {
@@ -88,8 +96,10 @@ h3 {
 .home_paragraphe {
   background-color: #184740;
   color: #f8f4ef;
-  padding: 40px;
+  padding: 60px;
+  height: 120px;
   border-radius: 200px 60px 120px 70px;
+  text-align: justify;
 }
 
 .accueil {
@@ -140,36 +150,75 @@ h3 {
   text-align: center;
 }
 
-.form {
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  background-color: #184740;
-  border-radius: 20px;
-  padding: 20px;
-  width: 50%;
-  box-shadow:
-    rgba(0, 0, 0, 0.1) 0px 0px 0px 1px,
-    rgba(0, 0, 0, 0.04) 0px 3px 3px,
-    rgba(0, 0, 0, 0.04) 0px 6px 6px,
-    rgba(0, 0, 0, 0.04) 0px 12px 12px;
+@media screen and (max-width: 1024px) {
+  .accueil,
+  .prestations,
+  .mini_a_propos,
+  .recommendations,
+  #contact {
+    padding: 0 40px;
+  }
+
+  .img_container {
+    display: flex;
+    justify-content: center;
+    margin-right: 60px;
+    margin-left: 125px;
+  }
+
+  .img_ana_tournesol {
+    height: 325px;
+  }
 }
 
-.form input,
-textarea {
-  border-radius: 20px;
-  border: 1px solid #54361b;
-  background-color: #f8f4ef;
-  padding: 10px;
-  margin: 5px;
+@media screen and (max-width: 1024px) {
+  .accueil,
+  .prestations,
+  .mini_a_propos,
+  .recommendations,
+  #contact {
+    padding: 0 40px;
+  }
+
+  .img_container {
+    display: flex;
+    justify-content: center;
+    margin-right: 60px;
+    margin-left: 90px;
+  }
+
+  .img_ana_tournesol {
+    height: 325px;
+  }
 }
 
-.form textarea {
-  resize: none;
-  height: 150px;
-}
+@media screen and (max-width: 768px) {
+  .accueil,
+  .prestations,
+  .mini_a_propos,
+  .recommendations,
+  #contact {
+    padding: 0 20px;
+  }
 
-.button_envoyer {
-  margin-top: 10px;
-  width: 20%;
+  .home {
+    padding: 20px 0;
+  }
+
+  .img_container {
+    margin-right: 0px;
+    margin-left: 0px;
+    margin-bottom: 20px;
+  }
+
+  .img_ana_tournesol {
+    height: 250px;
+  }
+
+  .intro {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 60px;
+  }
 }
