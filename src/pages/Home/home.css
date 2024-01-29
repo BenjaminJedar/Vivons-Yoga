@@ -1,7 +1,7 @@
 .home {
   font-family: 'faustina', sans-serif;
   background-color: #f8f4ef;
-  color: #54361b;
+  color: #6d4820;
   margin: 0;
   padding: 60px 0;
 }
@@ -33,9 +33,6 @@ h3 {
   display: flex;
   align-items: center;
   margin-bottom: 60px;
-  /*   justify-content: space-between;
-  padding: 0 100px 30px 100px;
- */
 }
 
 .title {
@@ -51,15 +48,13 @@ h3 {
 }
 
 .img_ana_tournesol {
-  height: 400px; /* 400px */
+  height: 400px;
   border-radius: 50px;
 }
 
 .intro_txt {
   width: 50%;
   height: 80%;
-  /*   margin-right: 80px;
- */
 }
 
 .button {
@@ -94,9 +89,9 @@ h3 {
 }
 
 .home_paragraphe {
-  background-color: #184740;
+  background-color: #6d4820;
   color: #f8f4ef;
-  padding: 60px;
+  padding: 40px;
   height: 120px;
   border-radius: 200px 60px 120px 70px;
   text-align: justify;
@@ -240,8 +235,17 @@ h3 {
   }
 
   .home_paragraphe {
+    margin: 20px -20px;
     padding: 80px;
     height: 100%;
+    border-radius: 0 0 0 0;
+    clip-path: polygon(
+      0 0,
+      100% 0,
+      100% calc(100% - 80px),
+      50% 100%,
+      0 calc(100% - 50px)
+    );
   }
 
   .prestations_card_container {
@@ -257,5 +261,21 @@ h3 {
   .card h3,
   p {
     padding-left: 20px;
+  }
+
+  .title_mini_a_propos {
+    padding-left: 20px;
+    padding-top: 20px;
+  }
+
+  .mini_a_propos {
+    background-color: #8489733b;
+    margin: 40px 0 40px 0;
+    padding: 0px;
+    border-radius: 0px;
+  }
+
+  .a_propos_btn {
+    margin-bottom: 0px;
   }
 }

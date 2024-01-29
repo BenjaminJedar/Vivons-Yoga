@@ -1,13 +1,14 @@
 import { Link } from 'react-router-dom';
+import React from 'react';
 import './button.css';
 
 function Button({ value, link_to }) {
   return (
-    <div>
+    <React.StrictMode>
       <Link to={link_to} className="button">
         {value}
       </Link>
-    </div>
+    </React.StrictMode>
   );
 }
 
