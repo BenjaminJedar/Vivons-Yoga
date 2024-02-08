@@ -219,6 +219,8 @@ h3 {
   }
 
   .img_ana_tournesol {
+    margin-top: 20px;
+    margin-bottom: 10px;
     height: 380px;
     border-radius: 120px 120px 5px 5px;
   }
