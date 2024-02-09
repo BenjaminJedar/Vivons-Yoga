@@ -158,27 +158,6 @@ h3 {
     display: flex;
     justify-content: center;
     margin-right: 60px;
-    margin-left: 125px;
-  }
-
-  .img_ana_tournesol {
-    height: 325px;
-  }
-}
-
-@media screen and (max-width: 1024px) {
-  .accueil,
-  .prestations,
-  .mini_a_propos,
-  .recommendations,
-  #contact {
-    padding: 0 40px;
-  }
-
-  .img_container {
-    display: flex;
-    justify-content: center;
-    margin-right: 60px;
     margin-left: 90px;
   }
 
@@ -197,15 +176,16 @@ h3 {
   }
 
   h1 {
-    font-size: 25px;
+    font-size: 23px;
+    margin-bottom: 10px;
   }
 
   h2 {
-    font-size: 18px;
+    font-size: 20px;
   }
 
   p {
-    font-size: 14px;
+    font-size: 16px;
   }
 
   .home {
@@ -229,25 +209,37 @@ h3 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-bottom: 60px;
+    margin-bottom: 30px;
   }
 
   .intro_txt {
     width: 100%;
   }
 
+  .button_papote {
+    margin-top: 20px;
+  }
+
   .home_paragraphe {
     margin: 20px -20px;
     padding: 80px;
     height: 100%;
-    border-radius: 0 0 0 0;
-    clip-path: polygon(
-      0 0,
-      100% 0,
-      100% calc(100% - 80px),
-      50% 100%,
-      0 calc(100% - 50px)
-    );
+    border-radius: 0;
+    /*=======Masque pour effet vague=======*/
+    --mask: radial-gradient(67.2px at 50% 94px, #000 99%, #0000 101%)
+        calc(50% - 80px) 0/160px 51% repeat-x,
+      radial-gradient(67.2px at 50% -54px, #0000 99%, #000 101%) 50% 40px/160px
+        calc(51% - 40px) repeat-x,
+      radial-gradient(67.2px at 50% calc(100% - 94px), #000 99%, #0000 101%) 50%
+        100%/160px 51% repeat-x,
+      radial-gradient(67.2px at 50% calc(100% + 54px), #0000 99%, #000 101%)
+        calc(50% - 80px) calc(100% - 40px) / 160px calc(51% - 40px) repeat-x;
+    -webkit-mask: var(--mask);
+    mask: var(--mask);
+  }
+
+  .prestations {
+    margin: 0;
   }
 
   .prestations_card_container {

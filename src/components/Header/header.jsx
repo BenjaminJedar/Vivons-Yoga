@@ -51,13 +51,25 @@ function Header() {
       <div className="mobile_menu">
         <div className={menu_class}>
           <nav className="headerNav mobileNav">
-            <Link to="/a_propos" className={'lien lien_mobile'}>
+            <Link
+              to="/a_propos"
+              className={'lien lien_mobile'}
+              onClick={updateMenu}
+            >
               Qui suis-je ?
             </Link>
-            <Link to="/prestations" className={'lien lien_mobile'}>
+            <Link
+              to="/prestations"
+              className={'lien lien_mobile'}
+              onClick={updateMenu}
+            >
               Mes préstations
             </Link>
-            <a href="../#contact" className="lien_contact lien_mobile">
+            <a
+              href="../#contact"
+              className="lien_contact lien_mobile"
+              onClick={updateMenu}
+            >
               Contact
             </a>
           </nav>

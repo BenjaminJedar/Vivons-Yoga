@@ -87,19 +87,45 @@
 
   .mobileNav {
     flex-direction: column;
+    justify-content: space-around;
+  }
+
+  .headerNav {
+    margin: 0;
+  }
+
+  @keyframes TranslateY {
+    from {
+      transform: translateY(10%);
+    }
+    to {
+      transform: translateY(0%);
+    }
   }
 
   .lien_mobile {
     display: inherit;
-    font-size: 16px;
     margin: 0;
+    font-size: 15px;
+    animation: grow-up 0.5s ease;
+    overflow: hidden;
+  }
+
+  @keyframes translateX_reverse {
+    from {
+      width: 50%;
+    }
+    to {
+      width: 0;
+    }
   }
 
   .hidden {
     display: none;
+    animation: translateX_reverse 0.5s ease-in-out;
   }
 
-  @keyframes translateY_neg {
+  @keyframes translateX {
     from {
       width: 0;
     }
@@ -109,8 +135,9 @@
   }
 
   .visible {
-    display: inherit;
-    animation: translateY_neg 0.5s ease-in-out;
+    display: flex;
+    justify-content: center;
+    animation: translateX 0.5s ease-in-out;
     overflow: hidden;
   }
 
