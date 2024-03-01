@@ -18,7 +18,7 @@ function Footer() {
       </div>
 
       <p className="copyright">
-        Yoga avec Ana | copyright 2023
+        Yoga avec Ana | copyright 2024
         <img
           src={logo_copyright}
           alt="logo copyright"

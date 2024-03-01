@@ -32,7 +32,7 @@ function Slider() {
         key={arrayOfReco[currentIndex].id}
         title={arrayOfReco[currentIndex].title}
         content={arrayOfReco[currentIndex].content}
-        className="card reco_card"
+        classname="reco_card"
       />
 
       <img

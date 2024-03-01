@@ -122,6 +122,23 @@ h3 {
   margin-bottom: 40px;
 }
 
+.prestations_card {
+  width: 29%;
+  padding: 0 20px;
+  border-radius: 10px;
+  box-shadow:
+    rgba(0, 0, 0, 0.1) 0px 0px 0px 1px,
+    rgba(0, 0, 0, 0.04) 0px 3px 3px,
+    rgba(0, 0, 0, 0.04) 0px 6px 6px,
+    rgba(0, 0, 0, 0.04) 0px 12px 12px;
+  transition: ease-in-out 0.7s;
+}
+
+.prestations_card:hover {
+  transition: ease-in-out 0.7s;
+  background-color: #8489733b;
+}
+
 .mini_a_propos {
   background-color: #8489733b;
   margin: 80px 60px;
@@ -226,33 +243,32 @@ h3 {
     height: 100%;
     border-radius: 0;
     /*=======Masque pour effet vague=======*/
-    --mask: radial-gradient(67.2px at 50% 94px, #000 99%, #0000 101%)
-        calc(50% - 80px) 0/160px 51% repeat-x,
-      radial-gradient(67.2px at 50% -54px, #0000 99%, #000 101%) 50% 40px/160px
-        calc(51% - 40px) repeat-x,
-      radial-gradient(67.2px at 50% calc(100% - 94px), #000 99%, #0000 101%) 50%
-        100%/160px 51% repeat-x,
-      radial-gradient(67.2px at 50% calc(100% + 54px), #0000 99%, #000 101%)
-        calc(50% - 80px) calc(100% - 40px) / 160px calc(51% - 40px) repeat-x;
+    --mask: radial-gradient(89.44px at 50% 120px, #000 99%, #0000 101%)
+        calc(50% - 80px) 0/160px 100%,
+      radial-gradient(89.44px at 50% -80px, #0000 99%, #000 101%) 50% 40px/160px
+        100% repeat-x;
     -webkit-mask: var(--mask);
     mask: var(--mask);
   }
 
   .prestations {
-    margin: 0;
+    margin: 0 0 40px 0;
   }
 
   .prestations_card_container {
     flex-direction: column;
+    margin-bottom: 0;
+    padding-right: 20px;
   }
 
-  .card {
-    width: 100%;
+  .prestations_card {
+    width: 99%;
     padding: 0;
     margin-bottom: 20px;
   }
 
-  .card h3,
+  .prestations_card,
+  .reco_card h3,
   p {
     padding-left: 20px;
   }
@@ -264,12 +280,44 @@ h3 {
 
   .mini_a_propos {
     background-color: #8489733b;
-    margin: 40px 0 40px 0;
-    padding: 0px;
     border-radius: 0px;
+    position: relative;
+    margin: 0;
+    padding-bottom: 40px;
+    box-shadow:
+      rgba(0, 0, 0, 0.1) 0px 0px 0px 1px,
+      rgba(0, 0, 0, 0.04) 0px 3px 3px,
+      rgba(0, 0, 0, 0.04) 0px 6px 6px,
+      rgba(0, 0, 0, 0.04) 0px 12px 12px;
   }
 
-  .a_propos_btn {
-    margin-bottom: 0px;
+  .mini_a_propos_content {
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+
+  .mini_a_propos_content p {
+  }
+
+  .mini_a_propos .button {
+  }
+
+  .ana_img {
+    margin-top: 0;
+  }
+
+  .recommendations_title {
+    margin-top: 40px;
+    margin-bottom: -20px;
+  }
+  .reco_card {
+    border-radius: 10px;
+    margin-bottom: 40px;
+    height: 300px;
+    box-shadow:
+      rgba(0, 0, 0, 0.1) 0px 0px 0px 1px,
+      rgba(0, 0, 0, 0.04) 0px 3px 3px,
+      rgba(0, 0, 0, 0.04) 0px 6px 6px,
+      rgba(0, 0, 0, 0.04) 0px 12px 12px;
   }
 }

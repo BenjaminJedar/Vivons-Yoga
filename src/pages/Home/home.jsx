@@ -56,7 +56,7 @@ function Home() {
               key={presta.id}
               title={presta.title}
               content={presta.content}
-              className="card prestations_card"
+              classname="prestations_card"
             />
           ))}
         </div>
@@ -78,7 +78,7 @@ function Home() {
             Egestas quis ipsum suspendisse ultrices gravida dictum. Ridiculus
             mus mauris vitae ultricies leo integer. Enim sit amet venenatis
             urna. Diam maecenas sed enim ut sem viverra. Sit amet consectetur
-            adipiscing elit duis.
+            adipiscing elit duis...
           </p>
           <img
             src={ana_img}

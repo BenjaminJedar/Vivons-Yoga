@@ -10,6 +10,38 @@
   margin: 20px;
 }
 
+.right_arrow {
+  animation: MOUVE_X_RIGHT 2s ease-in-out infinite;
+}
+
+.left_arrow {
+  animation: MOUVE_X_LEFT 2s ease-in-out infinite;
+}
+
 .arrow:hover {
   cursor: pointer;
+}
+
+@keyframes MOUVE_X_RIGHT {
+  0% {
+    translate: 0 0;
+  }
+  50% {
+    translate: 4px 0;
+  }
+  100% {
+    translate: 0 0;
+  }
+}
+
+@keyframes MOUVE_X_LEFT {
+  0% {
+    translate: 0 0;
+  }
+  50% {
+    translate: -4px 0;
+  }
+  100% {
+    translate: 0 0;
+  }
 }

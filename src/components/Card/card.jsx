@@ -1,8 +1,8 @@
 import './card.css';
 
-function Card({ title, content }) {
+function Card({ title, content, classname }) {
   return (
-    <div className="card">
+    <div className={classname}>
       <h3 className="card_home_title">{title}</h3>
       {Array.isArray(content) ? (
         content.map((description) => (
