@@ -71,6 +71,11 @@ function Home() {
       <div className="mini_a_propos">
         <h2 className="title_mini_a_propos">Qui se cache derrière Ana ?</h2>
         <div className="mini_a_propos_content">
+          <img
+            src={ana_img}
+            alt="Presentation d'Ana"
+            className="ana_img portrait"
+          />
           <p className="mini_a_propos_p">
             Lectus urna duis convallis convallis. Sagittis vitae et leo duis ut.
             At imperdiet dui accumsan sit amet. Pretium viverra suspendisse
@@ -80,11 +85,6 @@ function Home() {
             urna. Diam maecenas sed enim ut sem viverra. Sit amet consectetur
             adipiscing elit duis...
           </p>
-          <img
-            src={ana_img}
-            alt="Presentation d'Ana"
-            className="ana_img portrait"
-          />
         </div>
         <Button
           value={'Découvrir Ana'}
