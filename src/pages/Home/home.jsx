@@ -85,12 +85,12 @@ function Home() {
             urna. Diam maecenas sed enim ut sem viverra. Sit amet consectetur
             adipiscing elit duis...
           </p>
+          <Button
+            value={'Découvrir Ana'}
+            link_to="/a_propos"
+            className="a_propos_btn"
+          />
         </div>
-        <Button
-          value={'Découvrir Ana'}
-          link_to="/a_propos"
-          className="a_propos_btn"
-        />
       </div>
 
       <section className="recommendations">

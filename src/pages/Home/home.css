@@ -60,9 +60,11 @@ h3 {
 .button {
   font-family: 'faustina', sans-serif;
   transition: ease-in-out 0.3s;
+  text-align: center;
   margin: 0 20px;
   background-color: #f8f4ef;
   padding: 10px;
+  width: 130px;
   border: 2px solid #54361b;
   border-radius: 30px;
   color: #54361b;
@@ -140,20 +142,32 @@ h3 {
 }
 
 .mini_a_propos {
-  background-color: #8489733b;
-  margin: 80px 60px;
+  margin-top: 40px;
+  background-color: rgba(103, 168, 103, 0.193);
   padding: 50px;
-  border-radius: 40px;
 }
 
 .mini_a_propos_content {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   margin-bottom: 20px;
 }
 
 .ana_img {
-  margin-top: 20px;
-  height: 200px;
+  margin: 20px 0;
+  width: 600px;
   border-radius: 20px;
+  filter: brightness(75%);
+}
+
+.mini_a_propos p {
+  position: absolute;
+  width: 450px;
+  top: 60%;
+  left: 25%;
+  color: white;
 }
 
 .recommendations_title {
@@ -307,14 +321,21 @@ h3 {
     align-items: center;
   }
 
+  .ana_img {
+    margin-top: 0;
+    width: 200px;
+    filter: brightness(100%);
+  }
+
   .mini_a_propos_content p {
+    width: 100%;
+    position: inherit;
+    color: black;
+    width: 100%;
+    left: inherit;
   }
 
   .mini_a_propos .button {
-  }
-
-  .ana_img {
-    margin-top: 0;
   }
 
   .recommendations_title {

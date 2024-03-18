@@ -81,6 +81,8 @@ function Header() {
           <div className={burger_class}></div>
         </div>
       </div>
+
+      <div className="cache_block"></div>
     </div>
   );
 }
