@@ -28,6 +28,10 @@
   margin-left: 50px;
 }
 
+.cache_block {
+  display: none;
+}
+
 .active {
   text-decoration: underline;
 }
@@ -79,6 +83,7 @@
   }
 
   .cache_block {
+    display: inherit;
     position: absolute;
     top: 0;
     left: 0;
