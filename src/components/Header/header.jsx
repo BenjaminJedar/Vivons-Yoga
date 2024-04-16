@@ -8,7 +8,7 @@ function Header() {
   const location = useLocation();
 
   const [burger_class, setBurgerClass] = useState('burger_bar unclicked');
-  const [menu_class, setMenuClass] = useState('menu hidden');
+  const [menu_class, setMenuClass] = useState('menu');
   const [isMenuClicked, setIsMenuClicked] = useState(false);
 
   // toggle burger menu change
@@ -43,9 +43,9 @@ function Header() {
         >
           Mes préstations
         </Link>
-        <a href="../#contact" className="lien_contact">
+        {/*         <a href="../#contact" className="lien_contact">
           Contact
-        </a>
+        </a> */}
       </nav>
 
       <div className="mobile_menu">
