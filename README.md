@@ -1,2 +1,2 @@
-Voici le site de Yoga avec Ana, un magnifique site créé par Benjamin Jedar et codé en React !
+Voici le site de Vivons Yoga, un site professionnel oour une professeur fe yoga créé en React.
 Check the result here ! 👉  https://benjaminjedar.github.io/Vivons-Yoga/
