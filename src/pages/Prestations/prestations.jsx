@@ -1,20 +1,20 @@
+import cover_img from '../../assets/Ana_tournesol_1.jpeg';
 import './prestations.css';
-import Card from '../../components/Card/card';
 const prestation_array = require('../../datas/home_prestations.json');
 
 function Prestations() {
   return (
     <div className="presta">
+      <div className="img_container">
+        <img
+          src={cover_img}
+          alt="Ana dans les tournesols"
+          className="img_container"
+        />
+      </div>
       <h2 className="presta_title">Mes préstations</h2>
       <div className="presta_card_container">
-        {prestation_array.map((presta) => (
-          <Card
-            key={presta.id}
-            title={presta.title}
-            content={presta.content}
-            classname="prestations_card"
-          />
-        ))}
+        <h3>{prestation_array(1)}</h3>
       </div>
     </div>
   );
