@@ -10,11 +10,13 @@
 }
 
 .right_arrow {
-  animation: MOUVE_X_RIGHT 2s ease-in-out infinite;
+  margin-left: 10px;
+  animation: MOUVE_X_RIGHT 3s ease-in-out infinite;
 }
 
 .left_arrow {
-  animation: MOUVE_X_LEFT 2s ease-in-out infinite;
+  margin-right: 10px;
+  animation: MOUVE_X_LEFT 3s ease-in-out infinite;
 }
 
 .arrow:hover {

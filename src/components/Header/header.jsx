@@ -25,7 +25,7 @@ function Header() {
 
   return (
     <div className="headerSection">
-      <Link to="/">
+      <Link to="/" onClick={updateMenu}>
         <img src={logo_AK} className="logo_AK" alt="logo AK" />
       </Link>
       <nav className="headerNav">

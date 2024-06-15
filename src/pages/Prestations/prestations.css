@@ -1,5 +1,9 @@
-.presta {
+.prestation_page {
   font-family: 'faustina', sans-serif;
   background-color: #f8f4ef;
   color: #6d4820;
+}
+
+.prestation_page_title {
+  margin: 0;
 }
