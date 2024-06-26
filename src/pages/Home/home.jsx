@@ -7,6 +7,7 @@ import Slider from '../../components/Slider/slider';
 import Contact from '../../components/Contact/contact';
 import './home.css';
 const prestation_array = require('../../datas/home_prestations.json');
+const recommendations_array = require('../../datas/recommendations.json');
 
 function Home() {
   return (
@@ -94,8 +95,18 @@ function Home() {
       </div>
 
       <section className="recommendations">
-        <h2 className="recommendations_title">Témoignages</h2>
-        <Slider />
+        <div className="recommandation_PC">
+          <h2 className="recommendations_title">Témoignages</h2>
+          {recommendations_array.map((reco) => (
+            <div className="reco_card">
+              <h3>{reco.title}</h3>
+              <p>{reco.content}</p>
+            </div>
+          ))}
+        </div>
+        <div className="recommandation_phone">
+          <Slider />
+        </div>
       </section>
 
       <div id="contact">
