@@ -4,6 +4,23 @@
   color: #6d4820;
 }
 
+<<<<<<< HEAD
 .prestation_page_title {
   margin: 0;
+=======
+.presta_title {
+  margin: 0;
+  padding-top: 15px;
+}
+
+.img_container {
+  padding-top: 20px;
+  border-radius: 25px;
+  -webkit-filter: brightness(80%);
+  filter: brightness(90%);
+  height: 30vh;
+  margin-bottom: 20px;
+  object-fit: cover;
+  width: 100%;
+>>>>>>> bf1b2f912e6d0173b14265e3711bbc6c2878eea7
 }
