@@ -1,6 +1,5 @@
-import cover_img from '../../assets/Ana_tournesol_1.jpeg';
 import './prestations.css';
-const prestation_array = require('../../datas/home_prestations.json');
+//const prestation_array = require('../../datas/home_prestations.json');
 
 function Prestations() {
   return (

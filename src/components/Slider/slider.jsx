@@ -3,7 +3,7 @@ import Card from '../Card/card';
 import './slider.css';
 import left_arrow from '../../assets/arrow-left-solid.svg';
 import right_arrow from '../../assets/arrow-right-solid.svg';
-const arrayOfReco = require('../../datas/recommendations.json');
+const arrayOfReco = require('../../datas/recommandations.json');
 
 function Slider() {
   const [currentIndex, setCurrentIndex] = useState(0);

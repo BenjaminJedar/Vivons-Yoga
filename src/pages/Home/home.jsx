@@ -1,5 +1,6 @@
 import ana_tournesol from '../../assets/Ana_tournesol.jpeg';
 import ana_img from '../../assets/Ana.jpeg';
+import sunflower from '../../assets/sunflower.png';
 
 import Button from '../../components/Button/button';
 import Card from '../../components/Card/card';
@@ -7,7 +8,7 @@ import Slider from '../../components/Slider/slider';
 import Contact from '../../components/Contact/contact';
 import './home.css';
 const prestation_array = require('../../datas/home_prestations.json');
-const recommendations_array = require('../../datas/recommendations.json');
+const recommandations_array = require('../../datas/recommandations.json');
 
 function Home() {
   return (
@@ -33,7 +34,7 @@ function Home() {
               ex ea commodo consequat.
             </p>
             <a href="mailto:yoga-avec-ana@outlook.com">
-              <button className="button button_papote">On papote ?</button>
+              <button className="button button_papote">On papote ? 👋</button>
             </a>
           </div>
         </div>
@@ -63,7 +64,7 @@ function Home() {
         </div>
 
         <Button
-          value={'En savoir plus !'}
+          value={'En savoir plus ! 🤓'}
           link_to="/prestations"
           className="presta_btn"
         />
@@ -72,11 +73,6 @@ function Home() {
       <div className="mini_a_propos">
         <h2 className="title_mini_a_propos">Qui se cache derrière Ana ?</h2>
         <div className="mini_a_propos_content">
-          <img
-            src={ana_img}
-            alt="Presentation d'Ana"
-            className="ana_img portrait"
-          />
           <p className="mini_a_propos_p">
             Lectus urna duis convallis convallis. Sagittis vitae et leo duis ut.
             At imperdiet dui accumsan sit amet. Pretium viverra suspendisse
@@ -86,23 +82,30 @@ function Home() {
             urna. Diam maecenas sed enim ut sem viverra. Sit amet consectetur
             adipiscing elit duis...
           </p>
-          <Button
-            value={'Découvrir Ana'}
-            link_to="/a_propos"
-            className="a_propos_btn"
+          <img
+            src={ana_img}
+            alt="Presentation d'Ana"
+            className="ana_img portrait"
           />
         </div>
+        <Button
+          value={'Découvrir Ana ✨  '}
+          link_to="/a_propos"
+          className="a_propos_btn"
+        />
       </div>
 
-      <section className="recommendations">
+      <section className="recommandations">
         <div className="recommandation_PC">
-          <h2 className="recommendations_title">Témoignages</h2>
-          {recommendations_array.map((reco) => (
-            <div className="reco_card">
-              <h3>{reco.title}</h3>
-              <p>{reco.content}</p>
-            </div>
-          ))}
+          <h2 className="recommandations_title">Témoignages</h2>
+          <div className="reco">
+            {recommandations_array.map((reco) => (
+              <div className="reco_card">
+                <h3>{reco.title}</h3>
+                <p>{reco.content}</p>
+              </div>
+            ))}
+          </div>
         </div>
         <div className="recommandation_phone">
           <Slider />
@@ -111,7 +114,12 @@ function Home() {
 
       <div id="contact">
         <h2 className="contact_title">N'hésite pas à me contacter ! </h2>
-        <Contact />
+        <div className="contact_content">
+          <Contact />
+          <div className="sunflower_img_container">
+            <img src={sunflower} alt="Sunflower" className="sunflower" />
+          </div>
+        </div>
       </div>
     </div>
   );
