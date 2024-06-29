@@ -33,8 +33,8 @@ function Home() {
               veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
               ex ea commodo consequat.
             </p>
-            <a href="mailto:yoga-avec-ana@outlook.com">
-              <button className="button button_papote">On papote ? 👋</button>
+            <a href="mailto:vivons-yoga@outlook.com">
+              <button className="button button_papote">On papote ?</button>
             </a>
           </div>
         </div>
@@ -64,7 +64,7 @@ function Home() {
         </div>
 
         <Button
-          value={'En savoir plus ! 🤓'}
+          value={'En savoir plus !'}
           link_to="/prestations"
           className="presta_btn"
         />
@@ -89,7 +89,7 @@ function Home() {
           />
         </div>
         <Button
-          value={'Découvrir Ana ✨  '}
+          value={'Découvrir Ana'}
           link_to="/a_propos"
           className="a_propos_btn"
         />

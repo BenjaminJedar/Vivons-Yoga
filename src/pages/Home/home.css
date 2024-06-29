@@ -59,15 +59,13 @@ h3 {
 
 .button {
   font-family: 'faustina', sans-serif;
+  color: #f8f4ef;
   transition: ease-in-out 0.3s;
   text-align: center;
   margin: 0 20px;
-  background-color: #f8f4ef;
-  padding: 10px;
-  width: 130px;
-  border: 2px solid #54361b;
+  background-color: #b4b1c6;
+  border: 2px solid #b4b1c6;
   border-radius: 30px;
-  color: #54361b;
   font-size: 14px;
   box-shadow:
     rgba(0, 0, 0, 0.1) 0px 0px 0px 1px,
@@ -80,9 +78,8 @@ h3 {
   transform: scale(110%);
   transition: ease-in-out 0.3s;
   cursor: pointer;
-  background-color: #b4b1c6;
-  border: 2px solid #b4b1c6;
-  color: #f8f4ef;
+  background-color: #f8f4ef;
+  border: 2px solid #f8f4ef;
   box-shadow:
     rgba(0, 0, 0, 0.1) 0px 0px 0px 1px,
     rgba(0, 0, 0, 0.04) 0px 3px 3px,
@@ -97,17 +94,6 @@ h3 {
   height: 120px;
   border-radius: 120px 60px 120px 60px;
   text-align: justify;
-}
-
-.accueil {
-  position: relative;
-}
-
-.silhouette_yoga {
-  height: 150px;
-  position: absolute;
-  top: 89%;
-  left: 83%;
 }
 
 .prestations {
@@ -133,11 +119,13 @@ h3 {
     rgba(0, 0, 0, 0.04) 0px 6px 6px,
     rgba(0, 0, 0, 0.04) 0px 12px 12px;
   transition: ease-in-out 0.7s;
+  border-radius: 4px;
 }
 
 .prestations_card:hover {
   transition: ease-in-out 0.7s;
-  background-color: #8489733b;
+  background-color: #b4b1c6;
+  color: #f8f4ef;
 }
 
 .mini_a_propos {
@@ -162,6 +150,10 @@ h3 {
   width: 450px;
   top: 60%;
   left: 25%;
+}
+
+.a_propos_btn {
+  display: none;
 }
 
 .recommandation_PC {
@@ -230,7 +222,7 @@ h3 {
   .mini_a_propos,
   .recommendations,
   #contact {
-    padding: 0 20px;
+    padding: 50px 20px;
   }
 
   h1 {
