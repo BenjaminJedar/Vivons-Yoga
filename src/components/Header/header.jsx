@@ -23,9 +23,14 @@ function Header() {
     setIsMenuClicked(!isMenuClicked);
   }
 
+  function hiddenMenu() {
+    setBurgerClass('burger_bar unclicked');
+    setMenuClass('menu hidden');
+  }
+
   return (
     <div className="headerSection">
-      <Link to="/" onClick={updateMenu}>
+      <Link to="/" onClick={hiddenMenu}>
         <img src={logo_AK} className="logo_AK" alt="logo AK" />
       </Link>
       <nav className="headerNav">
