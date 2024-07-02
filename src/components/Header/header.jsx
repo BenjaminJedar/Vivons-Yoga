@@ -24,8 +24,10 @@ function Header() {
   }
 
   function hiddenMenu() {
-    setBurgerClass('burger_bar unclicked');
-    setMenuClass('menu hidden');
+    if (isMenuClicked) {
+      setBurgerClass('burger_bar unclicked');
+      setMenuClass('menu hidden');
+    }
   }
 
   return (
