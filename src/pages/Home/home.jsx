@@ -1,6 +1,5 @@
 import ana_tournesol from '../../assets/Ana_tournesol.jpeg';
 import ana_img from '../../assets/Ana.jpeg';
-import sunflower from '../../assets/sunflower.png';
 
 import Button from '../../components/Button/button';
 import Card from '../../components/Card/card';
@@ -51,7 +50,7 @@ function Home() {
       </div>
 
       <section className="prestations">
-        <h2 className="prestations.title">Mes préstations</h2>
+        <h2 className="prestations_title">Mes préstations</h2>
         <div className="prestations_card_container">
           {prestation_array.map((presta) => (
             <Card
@@ -116,9 +115,6 @@ function Home() {
         <h2 className="contact_title">N'hésite pas à me contacter ! </h2>
         <div className="contact_content">
           <Contact />
-          <div className="sunflower_img_container">
-            <img src={sunflower} alt="Sunflower" className="sunflower" />
-          </div>
         </div>
       </div>
     </div>
