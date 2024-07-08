@@ -86,6 +86,14 @@ h3 {
     rgba(0, 0, 0, 0.04) 0px 12px 12px;
 }
 
+.tournesol_deco_1 {
+  display: none;
+}
+
+.tournesol_deco_2 {
+  display: none;
+}
+
 .home_paragraphe {
   background-color: #6d4820;
   color: #f8f4ef;
@@ -93,6 +101,18 @@ h3 {
   height: 120px;
   border-radius: 120px 60px 120px 60px;
   text-align: justify;
+}
+
+.return_to_home {
+  padding: 0 5px;
+  border: 2px solid black;
+  border-radius: 20px;
+  height: 100px;
+  transform: rotate(90deg);
+  background-color: red;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
 }
 
 .prestations {
@@ -280,6 +300,24 @@ h3 {
         100% repeat-x;
     -webkit-mask: var(--mask);
     mask: var(--mask);
+  }
+
+  .tournesol_deco_1 {
+    display: inherit;
+    position: absolute;
+    height: 100px;
+    top: 103%;
+    left: 72%;
+    z-index: 2;
+  }
+
+  .tournesol_deco_2 {
+    display: inherit;
+    position: absolute;
+    height: 100px;
+    top: 155%;
+    left: 10%;
+    z-index: 2;
   }
 
   .prestations {

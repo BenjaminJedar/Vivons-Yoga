@@ -1,5 +1,11 @@
+import React, { useEffect } from 'react';
+import { motion, useAnimation } from 'framer-motion';
+import { useInView } from 'react-intersection-observer';
+
 import ana_tournesol from '../../assets/Ana_tournesol.jpeg';
 import ana_img from '../../assets/Ana.jpeg';
+import sunflower_nobg from '../../assets/sunflower_nobg.png';
+import arrow from '../../assets/arrow-left-solid.svg';
 
 import Button from '../../components/Button/button';
 import Card from '../../components/Card/card';
@@ -36,6 +42,16 @@ function Home() {
               <button className="button button_papote">On papote ?</button>
             </a>
           </div>
+          <img
+            src={sunflower_nobg}
+            alt="tournesol"
+            className="tournesol_deco_1"
+          />
+          <img
+            src={sunflower_nobg}
+            alt="tournesol"
+            className="tournesol_deco_2"
+          />
         </div>
 
         <p className="home_paragraphe">
@@ -47,6 +63,7 @@ function Home() {
           pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
           culpa qui officia deserunt mollit anim id est laborum.
         </p>
+        <img src={arrow} alt="arrow" className="return_to_home" />
       </div>
 
       <section className="prestations">
