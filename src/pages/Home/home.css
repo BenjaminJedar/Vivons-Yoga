@@ -103,17 +103,17 @@ h3 {
   text-align: justify;
 }
 
-.return_to_home {
+/* .return_to_home {
+  position: sticky;
+  position: -webkit-sticky;
+  top: 0;
   padding: 0 5px;
   border: 2px solid black;
   border-radius: 20px;
   height: 100px;
   transform: rotate(90deg);
   background-color: red;
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-}
+} */
 
 .prestations {
   display: flex;
