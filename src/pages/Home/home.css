@@ -294,30 +294,17 @@ h3 {
     height: 100%;
     border-radius: 0;
     /*=======Masque pour effet vague=======*/
-    --mask: radial-gradient(89.44px at 50% 120px, #000 99%, #0000 101%)
-        calc(50% - 80px) 0/160px 100%,
-      radial-gradient(89.44px at 50% -80px, #0000 99%, #000 101%) 50% 40px/160px
-        100% repeat-x;
+    --mask: radial-gradient(83.74px at 50% 113.1px, #000 99%, #0000 101%)
+        calc(50% - 78px) 0/156px 51% repeat-x,
+      radial-gradient(83.74px at 50% -74.1px, #0000 99%, #000 101%) 50% 39px/156px
+        calc(51% - 39px) repeat-x,
+      radial-gradient(83.74px at 50% calc(100% - 113.1px), #000 99%, #0000 101%)
+        50% 100%/156px 51% repeat-x,
+      radial-gradient(83.74px at 50% calc(100% + 74.1px), #0000 99%, #000 101%)
+        calc(50% - 78px) calc(100% - 39px) / 156px calc(51% - 39px) repeat-x;
+
     -webkit-mask: var(--mask);
     mask: var(--mask);
-  }
-
-  .tournesol_deco_1 {
-    display: inherit;
-    position: absolute;
-    height: 100px;
-    top: 103%;
-    left: 72%;
-    z-index: 2;
-  }
-
-  .tournesol_deco_2 {
-    display: inherit;
-    position: absolute;
-    height: 100px;
-    top: 155%;
-    left: 10%;
-    z-index: 2;
   }
 
   .prestations {
@@ -336,7 +323,7 @@ h3 {
 
   .prestations_card {
     width: 99%;
-    padding: 0;
+    padding: 0 0 20px 0;
     margin-bottom: 30px;
   }
 
@@ -381,6 +368,7 @@ h3 {
     color: black;
     width: 100%;
     left: inherit;
+    margin-bottom: 40px;
   }
 
   .recommandation_phone {
@@ -408,7 +396,7 @@ h3 {
   }
 
   .contact_title {
-    margin-top: 40px;
+    margin-top: 20px;
     margin-bottom: 30px;
   }
 

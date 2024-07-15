@@ -4,7 +4,9 @@ import ana_img from '../../assets/Ana.jpeg';
 function A_propos() {
   return (
     <div className="a_propos">
-      <img src={ana_img} alt="La belle Ana" className="ana_img_a_propos" />
+      <div className="illustration">
+        <img src={ana_img} alt="La belle Ana" className="ana_img_a_propos" />
+      </div>
       <h2>Salut moi c'est Ana ...</h2>
       <p>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
