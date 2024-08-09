@@ -1,0 +1,44 @@
+.presta_card {
+  border: 1px solid #e0e0e0;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  width: 100%;
+  height: 800px;
+  overflow: hidden;
+}
+
+.tab_container {
+  display: flex;
+  border-radius: 20px;
+}
+
+.tab_title {
+  flex: 1;
+  padding: 15px;
+  text-align: center;
+  cursor: pointer;
+  transition:
+    background-color 0.3s ease,
+    color 0.3s ease;
+}
+
+.selected {
+  background-color: #b4b1c690;
+}
+
+.tab_title:hover {
+  cursor: pointer;
+  background-color: #b4b1c690;
+}
+
+.active-tab {
+  background-color: #007bff;
+  color: white;
+  font-weight: bold;
+}
+
+.content {
+  padding: 20px;
+  background-color: white;
+  transition: all 0.3s ease-in-out;
+}

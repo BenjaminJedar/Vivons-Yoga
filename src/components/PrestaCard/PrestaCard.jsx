@@ -1,28 +1,36 @@
 import React, { useState } from 'react';
+import './PrestaCard.css';
+const prestation_data = require('../../datas/prestations.json');
 
-const PrestaCard = () => {
-  // Définir l'état pour l'onglet sélectionné
+function PrestaCard() {
+  // Défini l'état pour l'onglet sélectionné
   const [selectedTab, setSelectedTab] = useState(0);
+  const [isSelected, setIsSelected] = useState(false);
+  const [tabTitleClass, setTabTitleClass] = useState('tab_container');
+
+  function selectTitle() {
+    if (isSelected) {
+      setTabTitleClass('tab_container selected');
+    } else {
+      setTabTitleClass('tab_container');
+    }
+    setIsSelected(!isSelected);
+  }
 
   // Contenu des onglets
-  const tabContents = [
-    { title: 'Tab 1', content: 'This is the content of Tab 1' },
-    { title: 'Tab 2', content: 'This is the content of Tab 2' },
-    { title: 'Tab 3', content: 'This is the content of Tab 3' },
-  ];
 
   return (
-    <div style={styles.card}>
+    <div className="presta_card">
       {/* Onglets */}
-      <div style={styles.tabHeader}>
-        {tabContents.map((tab, index) => (
+      <div className={tabTitleClass}>
+        {prestation_data.map((tab, index) => (
           <div
             key={index}
-            style={{
-              ...styles.tab,
-              ...(selectedTab === index ? styles.activeTab : {}),
+            className="tab_title"
+            onClick={() => {
+              selectTitle();
+              setSelectedTab(index);
             }}
-            onClick={() => setSelectedTab(index)}
           >
             {tab.title}
           </div>
@@ -30,36 +38,9 @@ const PrestaCard = () => {
       </div>
 
       {/* Contenu */}
-      <div style={styles.content}>{tabContents[selectedTab].content}</div>
+      <div className="tab_content">{prestation_data[selectedTab].content}</div>
     </div>
   );
-};
-
-// Styles pour le composant
-const styles = {
-  card: {
-    border: '1px solid #ccc',
-    borderRadius: '8px',
-    width: '300px',
-    boxShadow: '0 2px 4px rgba(0,0,0,0.1)',
-  },
-  tabHeader: {
-    display: 'flex',
-    cursor: 'pointer',
-  },
-  tab: {
-    flex: 1,
-    padding: '10px',
-    textAlign: 'center',
-    borderBottom: '2px solid transparent',
-  },
-  activeTab: {
-    borderBottom: '2px solid #007bff',
-    fontWeight: 'bold',
-  },
-  content: {
-    padding: '20px',
-  },
-};
+}
 
 export default PrestaCard;
