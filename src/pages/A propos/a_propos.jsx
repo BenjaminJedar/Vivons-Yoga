@@ -1,5 +1,6 @@
 import './a_propos.css';
 import ana_img from '../../assets/Ana.jpeg';
+import Button from '../../components/Button/button';
 
 function A_propos() {
   return (

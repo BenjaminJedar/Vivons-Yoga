@@ -1,4 +1,4 @@
-import React, { useEffect, Suspense } from 'react';
+import React, { useEffect, useRef, Suspense } from 'react';
 import { motion, useAnimation } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 
@@ -39,8 +39,8 @@ function Home() {
                 minim veniam, quis nostrud exercitation ullamco laboris nisi ut
                 aliquip ex ea commodo consequat.
               </p>
-              <a href="mailto:vivons-yoga@outlook.com">
-                <button className="button button_papote">On papote ?</button>
+              <a href="mailto:vivons-yoga@hotmail.com">
+                <button className="button_papote">On papote ?</button>
               </a>
             </div>
             <img
@@ -81,12 +81,13 @@ function Home() {
               />
             ))}
           </div>
-
-          <Button
-            value={'En savoir plus !'}
-            link_to="/prestations"
-            className="presta_btn"
-          />
+          <div className="btn_container">
+            <Button
+              value={'En savoir plus !'}
+              link_to="/prestations"
+              className="presta_btn"
+            />
+          </div>
         </section>
 
         <div className="mini_a_propos">
@@ -107,11 +108,13 @@ function Home() {
               className="ana_img portrait"
             />
           </div>
-          <Button
-            value={'Découvrir Ana'}
-            link_to="/a_propos"
-            className="a_propos_btn"
-          />
+          <div className="btn_container">
+            <Button
+              value={'Découvrir Ana'}
+              link_to="/a_propos"
+              className="a_propos_btn"
+            />
+          </div>
         </div>
 
         <section className="recommandations">
