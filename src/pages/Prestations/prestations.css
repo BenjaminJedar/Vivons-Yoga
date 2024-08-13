@@ -2,7 +2,7 @@
   font-family: 'faustina', sans-serif;
   background-color: #f8f4ef;
   color: #6d4820;
-  padding: 0 50px;
+  padding: 0 200px 50px 200px;
 }
 
 .img_presta_container {
@@ -22,6 +22,8 @@
   margin-bottom: 20px;
 }
 
-p {
-  margin: 0;
+@media screen and (max-width: 767px) {
+  .prestation_page {
+    padding: 0 50px 50px 50px;
+  }
 }

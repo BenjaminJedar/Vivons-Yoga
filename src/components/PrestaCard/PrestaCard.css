@@ -3,8 +3,6 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   border-radius: 10px;
   width: 100%;
-  height: 800px;
-  overflow: hidden;
 }
 
 .tab_container {
@@ -23,7 +21,8 @@
 }
 
 .selected {
-  background-color: #b4b1c690;
+  /*   background-color: #b4b1c690; */
+  background-color: red;
 }
 
 .tab_title:hover {
@@ -31,14 +30,18 @@
   background-color: #b4b1c690;
 }
 
-.active-tab {
-  background-color: #007bff;
-  color: white;
-  font-weight: bold;
-}
-
 .content {
   padding: 20px;
   background-color: white;
   transition: all 0.3s ease-in-out;
 }
+
+.prestation_p {
+  padding: 0 10px 0 20px;
+}
+
+/* @media screen and (max-width: 767px) {
+  .tab_title:hover {
+    background-color: inherit;
+  }
+} */
