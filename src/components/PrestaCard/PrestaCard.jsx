@@ -1,27 +1,17 @@
 import React, { useState } from 'react';
 import './PrestaCard.css';
+import Button from '../Button/button';
+
 const prestation_data = require('../../datas/prestations.json');
 
 function PrestaCard() {
   // Défini l'état pour l'onglet sélectionné
   const [selectedTab, setSelectedTab] = useState(0);
-  const [isSelected, setIsSelected] = useState(false);
-  const [tabTitleClass, setTabTitleClass] = useState('tab_title');
-
-  function selectTitle() {
-    if (isSelected) {
-      setTabTitleClass('tab_title selected');
-    } else {
-      setTabTitleClass('tab_title');
-    }
-    setIsSelected(!isSelected);
-  }
 
   // Contenu des onglets
 
   return (
     <div className="presta_card">
-      {/* Onglets */}
       <div className="tab_container">
         {prestation_data.map((tab, index) => (
           <div
@@ -31,8 +21,6 @@ function PrestaCard() {
             }
             onClick={() => {
               setSelectedTab(index);
-              selectTitle();
-              console.log('titre n°' + selectedTab + '  ' + 'selectioné');
             }}
           >
             {tab.title}
@@ -40,14 +28,23 @@ function PrestaCard() {
         ))}
       </div>
 
-      {/* Contenu */}
       <div className="tab_content">
         {prestation_data[selectedTab].content.map((content, index) => (
           <p key={index} className="prestation_p">
             {content}
           </p>
         ))}
+        <p className="details">{prestation_data[selectedTab].details}</p>
+        <p className="duration">
+          Durée : {prestation_data[selectedTab].duration}
+        </p>
+        <p className="price">Prix : {prestation_data[selectedTab].price}</p>
       </div>
+      <Button
+        value={'Je veux prendre un cours !'}
+        link_to="/contact"
+        className="contact_btn"
+      />
     </div>
   );
 }

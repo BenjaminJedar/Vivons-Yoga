@@ -24,7 +24,7 @@
 
 @media screen and (max-width: 767px) {
   .a_propos {
-    padding: inherit;
+    padding: 0 0 50px 0;
   }
 
   .ana_img_a_propos {
