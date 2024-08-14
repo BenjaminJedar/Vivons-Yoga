@@ -34,17 +34,23 @@ function PrestaCard() {
             {content}
           </p>
         ))}
-        <p className="details">{prestation_data[selectedTab].details}</p>
-        <p className="duration">
+        <p className="details prestation_p">
+          {prestation_data[selectedTab].details}
+        </p>
+        <p className="duration prestation_p">
           Durée : {prestation_data[selectedTab].duration}
         </p>
-        <p className="price">Prix : {prestation_data[selectedTab].price}</p>
+        <p className="price prestation_p">
+          Prix : {prestation_data[selectedTab].price}
+        </p>
       </div>
-      <Button
-        value={'Je veux prendre un cours !'}
-        link_to="/contact"
-        className="contact_btn"
-      />
+      <div className="btn_container">
+        <Button
+          value={'Je veux prendre un cours !'}
+          link_to="/contact"
+          className="contact_btn"
+        />
+      </div>
     </div>
   );
 }

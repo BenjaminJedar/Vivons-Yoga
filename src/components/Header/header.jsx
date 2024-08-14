@@ -50,9 +50,12 @@ function Header() {
         >
           Mes préstations
         </Link>
-        {/*         <a href="../#contact" className="lien_contact">
+        <Link
+          to="/contact"
+          className={location.pathname === '/contact' ? 'lien active' : 'lien'}
+        >
           Contact
-        </a> */}
+        </Link>
       </nav>
 
       <div className="mobile_menu">
@@ -72,13 +75,13 @@ function Header() {
             >
               Mes préstations
             </Link>
-            <a
-              href="../#contact"
-              className="lien_contact lien_mobile"
+            <Link
+              to="/contact"
+              className={'lien lien_mobile'}
               onClick={updateMenu}
             >
               Contact
-            </a>
+            </Link>
           </nav>
         </div>
 
