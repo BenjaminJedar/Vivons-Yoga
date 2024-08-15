@@ -10,7 +10,7 @@ import arrow from '../../assets/arrow-left-solid.svg';
 import Button from '../../components/Button/button';
 import Card from '../../components/Card/card';
 import Slider from '../../components/Slider/slider';
-import Contact from '../../components/Contact/contact';
+import Contact from '../../components/ContactForm/contactForm';
 import './home.css';
 const prestation_array = require('../../datas/home_prestations.json');
 const recommandations_array = require('../../datas/recommandations.json');
@@ -81,7 +81,7 @@ function Home() {
               />
             ))}
           </div>
-          <div className="btn_container">
+          <div className="btn_container presta_btn_container">
             <Button
               value={'En savoir plus !'}
               link_to="/prestations"
@@ -118,8 +118,12 @@ function Home() {
         </div>
 
         <section className="recommandations">
+          <h2 className="recommandations_title">Témoignages</h2>
+          <p className="recommandations_paragraphe">
+            Je vous transmet le meilleur de mes conseil. La bienveillance est au
+            centre de toutes mes séances et votre bien être est ma priorité !
+          </p>
           <div className="recommandation_PC">
-            <h2 className="recommandations_title">Témoignages</h2>
             <div className="reco">
               {recommandations_array.map((reco) => (
                 <div className="reco_card">
@@ -133,13 +137,6 @@ function Home() {
             <Slider />
           </div>
         </section>
-
-        <div id="contact">
-          <h2 className="contact_title">N'hésite pas à me contacter ! </h2>
-          <div className="contact_content">
-            <Contact />
-          </div>
-        </div>
       </Suspense>
     </div>
   );
