@@ -43,13 +43,13 @@ function PrestaCard() {
         <p className="price prestation_p">
           Prix : {prestation_data[selectedTab].price}
         </p>
-      </div>
-      <div className="btn_container">
-        <Button
-          value={'Je veux prendre un cours !'}
-          link_to="/contact"
-          className="contact_btn"
-        />
+        <div className="btn_container">
+          <Button
+            value={'Je veux prendre un cours !'}
+            link_to="/contact"
+            className="contact_btn"
+          />
+        </div>
       </div>
     </div>
   );
