@@ -26,7 +26,7 @@ function ContactForm() {
       );
 
     e.target.reset();
-    alert('Message envoyé !');
+    alert('Votre message a été envoyé avec succés ! ✉️');
   };
 
   return (
