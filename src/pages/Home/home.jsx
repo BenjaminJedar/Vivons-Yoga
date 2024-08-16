@@ -116,10 +116,10 @@ function Home() {
             ))}
           </div>
         </div>
-        <div className="recommandation_phone">
-          <Slider />
-        </div>
       </section>
+      <div className="slider_container">
+        <Slider />
+      </div>
     </div>
   );
 }

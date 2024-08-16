@@ -15,11 +15,8 @@ span {
 .accueil,
 .prestations,
 .mini_a_propos,
-.recommendations,
-.recommandation_PC,
+.recommandations,
 #contact {
-  /*   margin: 0 200px;
- */
   padding: 70px 200px 0 200px;
 }
 
@@ -181,7 +178,7 @@ h3 {
   left: 25%;
 }
 
-.recommandation_phone {
+.slider_container {
   display: none;
 }
 
@@ -203,11 +200,6 @@ h3 {
   margin-bottom: 40px;
   padding: 20px;
   width: 400px;
-  box-shadow:
-    rgba(0, 0, 0, 0.1) 0px 0px 0px 1px,
-    rgba(0, 0, 0, 0.04) 0px 3px 3px,
-    rgba(0, 0, 0, 0.04) 0px 6px 6px,
-    rgba(0, 0, 0, 0.04) 0px 12px 12px;
 }
 
 .contact_title {
@@ -222,7 +214,7 @@ h3 {
   .accueil,
   .prestations,
   .mini_a_propos,
-  .recommendations,
+  .recommandations,
   #contact {
     padding: 0 40px;
     margin: 0;
@@ -366,7 +358,7 @@ h3 {
     margin-bottom: 40px;
   }
 
-  .recommandation_phone {
+  .slider_container {
     display: inherit;
   }
 

@@ -34,12 +34,15 @@ textarea {
 }
 
 .button_envoyer {
-  margin-top: 20px;
-  width: 130px;
+  width: 10vw;
+  margin-top: 5px;
 }
 
 @media screen and (max-width: 767px) {
   .form {
     width: inherit;
+  }
+  .button_envoyer {
+    width: 25vw;
   }
 }
