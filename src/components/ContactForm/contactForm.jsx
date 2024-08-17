@@ -162,14 +162,14 @@ function ContactForm() {
       <input
         type="email"
         id="mail"
-        name="mail"
+        name="email"
         value={inputMailValue}
         onChange={handleInputMailChange}
         placeholder="email"
       />
       <textarea
         id="msg"
-        name="last_name"
+        name="message"
         value={inputMessageValue}
         onChange={handleInputMessageChange}
         placeholder="Message"
