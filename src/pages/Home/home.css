@@ -169,15 +169,15 @@ h3 {
 }
 .reco {
   display: flex;
-  justify-content: space-around;
-  flex-wrap: wrap;
+  gap: 10px;
 }
 
 .reco_card {
+  border: 1px solid #b9a38783;
   border-radius: 10px;
   margin-bottom: 40px;
   padding: 20px;
-  width: 400px;
+  width: 100%;
 }
 
 .contact_title {
@@ -338,6 +338,7 @@ h3 {
 
   .slider_container {
     display: inherit;
+    padding-bottom: 50px;
   }
 
   .recommandation_PC {

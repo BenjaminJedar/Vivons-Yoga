@@ -28,12 +28,14 @@ function Slider() {
         alt="left arrow"
       />
 
-      <Card
-        key={arrayOfReco[currentIndex].id}
-        title={arrayOfReco[currentIndex].title}
-        content={arrayOfReco[currentIndex].content}
-        classname="reco_card"
-      />
+      <div className="recommandation_card_slider">
+        <h3 className="recommandation_card_title">
+          {arrayOfReco[currentIndex].title}
+        </h3>
+        <p className="recommandation_card_content">
+          {arrayOfReco[currentIndex].content}
+        </p>
+      </div>
 
       <img
         src={right_arrow}

@@ -98,17 +98,17 @@ function Home() {
           Je vous transmet le meilleur de mes conseil. La bienveillance est au
           centre de toutes mes séances et votre bien être est ma priorité !
         </p>
-        <div className="recommandation_PC">
-          <div className="reco">
-            {recommandations_array.map((reco) => (
-              <div className="reco_card">
-                <h3>{reco.title}</h3>
-                <p>{reco.content}</p>
-              </div>
-            ))}
-          </div>
-        </div>
       </section>
+      <div className="recommandation_PC">
+        <div className="reco">
+          {recommandations_array.map((reco) => (
+            <div className="reco_card">
+              <h3>{reco.title}</h3>
+              <p>{reco.content}</p>
+            </div>
+          ))}
+        </div>
+      </div>
       <div className="slider_container">
         <Slider />
       </div>
