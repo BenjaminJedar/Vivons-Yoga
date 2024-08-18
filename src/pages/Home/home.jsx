@@ -112,6 +112,18 @@ function Home() {
       <div className="slider_container">
         <Slider />
       </div>
+      <div className="call_to_action_contact">
+        <h2 className="call_to_action_contact_title">
+          Envoie moi un petit mot si quelque chose t'intéresse !
+        </h2>
+        <div className="btn_container">
+          <Button
+            value={'Contacter Ana'}
+            link_to="/contact"
+            className="contact_btn"
+          />
+        </div>
+      </div>
     </div>
   );
 }

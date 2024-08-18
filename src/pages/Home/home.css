@@ -16,7 +16,7 @@ span {
 .prestations,
 .mini_a_propos,
 .recommandations,
-#contact {
+.call_to_action_contact {
   padding: 70px 200px 0 200px;
 }
 
@@ -189,6 +189,10 @@ h3 {
   height: 200px;
 }
 
+.btn_contact_container {
+  padding: 30px 0;
+}
+
 @media screen and (max-width: 1024px) {
   .accueil,
   .prestations,
@@ -216,7 +220,7 @@ h3 {
   .prestations,
   .mini_a_propos,
   .recommendations,
-  #contact {
+  .call_to_action_contact {
     margin: 0;
     padding: 50px 20px;
   }
