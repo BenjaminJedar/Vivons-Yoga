@@ -114,9 +114,16 @@ function Home() {
       </div>
       <div className="call_to_action_contact">
         <h2 className="call_to_action_contact_title">
-          Envoie moi un petit mot si quelque chose t'intéresse !
+          Envoie moi un petit mot si quelque chose t'intéresse ! ☀️
         </h2>
-        <div className="btn_container">
+        <p className="call_to_action_contact_content">
+          Lectus urna duis convallis convallis. Sagittis vitae et leo duis ut.
+          At imperdiet dui accumsan sit amet. Pretium viverra suspendisse
+          potenti nullam. In aliquam sem fringilla ut morbi tincidunt augue.
+          Egestas quis ipsum suspendisse ultrices gravida dictum. Ridiculus mus
+          mauris vitae ultricies leo integer.
+        </p>
+        <div className="btn_contact_container">
           <Button
             value={'Contacter Ana'}
             link_to="/contact"
