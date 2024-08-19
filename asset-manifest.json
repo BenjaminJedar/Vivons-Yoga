@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/Vivons-Yoga/static/css/main.2a51ad45.css",
-    "main.js": "/Vivons-Yoga/static/js/main.31ed631e.js",
+    "main.css": "/Vivons-Yoga/static/css/main.1f7ff776.css",
+    "main.js": "/Vivons-Yoga/static/js/main.051f296a.js",
     "static/media/Ana_tournesol.jpeg": "/Vivons-Yoga/static/media/Ana_tournesol.f7470a9c0640d7fe0e0e.jpeg",
     "static/media/Ana.jpeg": "/Vivons-Yoga/static/media/Ana.1928837a4535a9f7b1a9.jpeg",
     "static/media/couverture_prestations.jpg": "/Vivons-Yoga/static/media/couverture_prestations.f4a8f05e7e17358802a1.jpg",
@@ -14,11 +14,11 @@
     "static/media/logo_copyright.svg": "/Vivons-Yoga/static/media/logo_copyright.8a9ec737e74730a64fb9e4231235af51.svg",
     "static/media/arrow-right-solid.svg": "/Vivons-Yoga/static/media/arrow-right-solid.b858beecd8ba30518faa957640464961.svg",
     "static/media/arrow-left-solid.svg": "/Vivons-Yoga/static/media/arrow-left-solid.8c8e1029ad0bfaf72ce0fad5773fd7f6.svg",
-    "main.2a51ad45.css.map": "/Vivons-Yoga/static/css/main.2a51ad45.css.map",
-    "main.31ed631e.js.map": "/Vivons-Yoga/static/js/main.31ed631e.js.map"
+    "main.1f7ff776.css.map": "/Vivons-Yoga/static/css/main.1f7ff776.css.map",
+    "main.051f296a.js.map": "/Vivons-Yoga/static/js/main.051f296a.js.map"
   },
   "entrypoints": [
-    "static/css/main.2a51ad45.css",
-    "static/js/main.31ed631e.js"
+    "static/css/main.1f7ff776.css",
+    "static/js/main.051f296a.js"
   ]
 }
