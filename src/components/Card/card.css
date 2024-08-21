@@ -1,5 +1,5 @@
 .card {
-  width: 29%;
+  width: 25%;
   border-radius: 15px;
   overflow: hidden;
   box-shadow:
@@ -33,4 +33,19 @@
 
 .card_home_title {
   text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  .presta_btn_home_container {
+    display: none;
+  }
+
+  .card {
+    width: 100%;
+    height: 30%;
+  }
+
+  .img_card_container {
+    display: none;
+  }
 }

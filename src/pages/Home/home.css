@@ -126,6 +126,7 @@ h3 {
   justify-content: space-evenly;
   gap: 30px;
   margin-bottom: 40px;
+  padding: 0 70px;
 }
 
 .btn_container {
@@ -164,12 +165,12 @@ h3 {
 }
 
 .recommandations_paragraphe {
-  margin-bottom: 20px;
+  margin-bottom: 50px;
 }
 .reco {
   display: flex;
   gap: 10px;
-  padding: 0 20px;
+  padding: 0 70px;
 }
 
 .reco_card {
@@ -294,7 +295,8 @@ h3 {
   .prestations_card_container {
     flex-direction: column;
     margin-bottom: 0;
-    padding-right: 20px;
+    padding: 0 30px;
+    margin-top: -50px;
   }
 
   .prestations_card {

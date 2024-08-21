@@ -54,16 +54,13 @@ function Home() {
 
       <section className="prestations">
         <h2 className="prestations_title">Mes préstations</h2>
-        <div className="prestations_card_container">
-          {prestation_array.map((presta) => (
-            <Card
-              key={presta.id}
-              title={presta.title}
-              content={presta.content}
-            />
-          ))}
-        </div>
       </section>
+
+      <div className="prestations_card_container">
+        {prestation_array.map((presta) => (
+          <Card key={presta.id} title={presta.title} content={presta.content} />
+        ))}
+      </div>
 
       <div className="mini_a_propos">
         <h2 className="title_mini_a_propos">Qui se cache derrière Ana ?</h2>

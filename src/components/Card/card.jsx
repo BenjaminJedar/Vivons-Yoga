@@ -17,7 +17,7 @@ function Card({ title, content }) {
         ) : (
           <p className="card_home_content">{content}</p>
         )}
-        <div className="btn_container presta_btn_container">
+        <div className="btn_container presta_btn_home_container">
           <Button
             value={'En savoir plus !'}
             link_to="/prestations"
