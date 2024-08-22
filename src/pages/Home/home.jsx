@@ -35,9 +35,11 @@ function Home() {
               veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
               ex ea commodo consequat.
             </p>
-            <a href="mailto:vivons-yoga@hotmail.com">
-              <button className="button_papote">On papote ?</button>
-            </a>
+            <div className="button_papote_container">
+              <a href="mailto:vivons-yoga@hotmail.com">
+                <button className="button_papote">On papote ?</button>
+              </a>
+            </div>
           </div>
         </div>
 

@@ -61,6 +61,11 @@ h3 {
   padding-bottom: 20px;
 }
 
+.button_papote_container {
+  display: flex;
+  justify-content: center;
+}
+
 .button_papote {
   font-family: 'faustina', sans-serif;
   color: #f8f4ef;
@@ -190,6 +195,8 @@ h3 {
 }
 
 .btn_contact_container {
+  display: flex;
+  justify-content: center;
   padding: 30px 0;
 }
 
