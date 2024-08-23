@@ -60,7 +60,13 @@ function Home() {
 
       <div className="prestations_card_container">
         {prestation_array.map((presta) => (
-          <Card key={presta.id} title={presta.title} content={presta.content} />
+          <Card
+            key={presta.id}
+            title={presta.title}
+            content={presta.content}
+            /*             picture={presta.picture}
+             */
+          />
         ))}
       </div>
 

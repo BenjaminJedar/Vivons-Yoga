@@ -2,7 +2,7 @@ import './card.css';
 import img_card from '../../assets/couverture_prestations.jpg';
 import Button from '../Button/button';
 
-function Card({ title, content }) {
+function Card({ title, content /*picture*/ }) {
   return (
     <div className="card">
       <div className="img_card_container">
