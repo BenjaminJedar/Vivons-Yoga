@@ -4,6 +4,7 @@ import React /* useEffect, useRef, Suspense */ from 'react';
  */
 import ana_tournesol from '../../assets/Ana_tournesol.jpeg';
 import ana_img from '../../assets/Ana.jpeg';
+import meditation_img from '../../assets/meditation.jpg';
 
 import Button from '../../components/Button/button';
 import Card from '../../components/Card/card';
