@@ -1,5 +1,4 @@
 .slider {
-  margin-top: 50px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -10,15 +9,23 @@
 }
 
 .right_arrow {
-  animation: MOUVE_X_RIGHT 2s ease-in-out infinite;
+  margin: 0 10px;
+  animation: MOUVE_X_RIGHT 3s ease-in-out infinite;
 }
 
 .left_arrow {
-  animation: MOUVE_X_LEFT 2s ease-in-out infinite;
+  margin: 0 10px;
+  animation: MOUVE_X_LEFT 3s ease-in-out infinite;
 }
 
 .arrow:hover {
   cursor: pointer;
+}
+
+.recommandation_card_slider {
+  padding: 10px;
+  border: 1px solid #b9a38783;
+  border-radius: 10px;
 }
 
 @keyframes MOUVE_X_RIGHT {

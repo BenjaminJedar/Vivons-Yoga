@@ -1,21 +1,29 @@
-.presta {
+.prestation_page {
   font-family: 'faustina', sans-serif;
   background-color: #f8f4ef;
   color: #6d4820;
+  padding: 0 200px 50px 200px;
 }
 
-.presta_title {
-  margin: 0;
-  padding-top: 15px;
+.img_presta_container {
+  display: flex;
+  justify-content: center;
+  padding: 50px 0;
 }
 
-.img_container {
-  padding-top: 20px;
-  border-radius: 25px;
-  -webkit-filter: brightness(80%);
-  filter: brightness(90%);
-  height: 30vh;
-  margin-bottom: 20px;
-  object-fit: cover;
+.img_couverture {
+  filter: brightness(80%);
+  border-radius: 30px;
   width: 100%;
+}
+
+.prestation_page_title {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 767px) {
+  .prestation_page {
+    padding: 0 20px 50px 20px;
+  }
 }

@@ -1,12 +1,15 @@
 import './a_propos.css';
 import ana_img from '../../assets/Ana.jpeg';
+import Button from '../../components/Button/button';
 
 function A_propos() {
   return (
     <div className="a_propos">
-      <img src={ana_img} alt="La belle Ana" className="ana_img_a_propos" />
-      <h2>Salut moi c'est Ana ...</h2>
-      <p>
+      <div className="illustration">
+        <img src={ana_img} alt="La belle Ana" className="ana_img_a_propos" />
+      </div>
+      <h2 className="a_propos_title_page">Salut moi c'est Ana ...</h2>
+      <p className="a_propos_content_page">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod
         tempor incididunt ut labore et dolore magna aliqua. In tellus integer
         feugiat scelerisque varius. Aenean vel elit scelerisque mauris
@@ -19,7 +22,7 @@ function A_propos() {
         rhoncus dolor purus non enim praesent. Vitae suscipit tellus mauris a
         diam.
       </p>
-      <a href="mailto:yoga-avec-ana@outlook.com">
+      <a href="mailto:yoga-avec-ana@outlook.com" className="lien_btn_a_propos">
         <button className="button button_papote">On papote ?</button>
       </a>
     </div>

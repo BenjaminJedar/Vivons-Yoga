@@ -1,21 +1,27 @@
-import cover_img from '../../assets/Ana_tournesol_1.jpeg';
 import './prestations.css';
-const prestation_array = require('../../datas/home_prestations.json');
+import PrestaCard from '../../components/PrestaCard/PrestaCard';
+import img_couverture_prestations from '../../assets/couverture_prestations_redim.jpg';
+import img_couverture_prestations_PC from '../../assets/couverture_prestations_redim_PC.jpg';
 
 function Prestations() {
   return (
-    <div className="presta">
-      <div className="img_container">
-        <img
-          src={cover_img}
-          alt="Ana dans les tournesols"
-          className="img_container"
-        />
+    <div className="prestation_page">
+      <div className="img_presta_container">
+        <picture>
+          <source
+            srcset={img_couverture_prestations}
+            media="(max-width: 767px)"
+          />
+          <img
+            src={img_couverture_prestations_PC}
+            alt="Un papillon sur une fleure"
+            className="img_couverture"
+          />
+        </picture>
       </div>
-      <h2 className="presta_title">Mes préstations</h2>
-      <div className="presta_card_container">
-        <h3>{prestation_array(1)}</h3>
-      </div>
+
+      <h2 className="prestation_page_title">Mes préstations</h2>
+      <PrestaCard className="presta_card" />
     </div>
   );
 }

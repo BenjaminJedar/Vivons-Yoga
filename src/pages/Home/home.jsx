@@ -1,12 +1,16 @@
+import React /* useEffect, useRef, Suspense */ from 'react';
+/* import { motion, useAnimation } from 'framer-motion';
+ *//* import { useInView } from 'react-intersection-observer';
+ */
 import ana_tournesol from '../../assets/Ana_tournesol.jpeg';
 import ana_img from '../../assets/Ana.jpeg';
 
 import Button from '../../components/Button/button';
 import Card from '../../components/Card/card';
 import Slider from '../../components/Slider/slider';
-import Contact from '../../components/Contact/contact';
 import './home.css';
 const prestation_array = require('../../datas/home_prestations.json');
+const recommandations_array = require('../../datas/recommandations.json');
 
 function Home() {
   return (
@@ -31,9 +35,11 @@ function Home() {
               veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
               ex ea commodo consequat.
             </p>
-            <a href="mailto:yoga-avec-ana@outlook.com">
-              <button className="button button_papote">On papote ?</button>
-            </a>
+            <div className="button_papote_container">
+              <a href="mailto:vivons-yoga@hotmail.com">
+                <button className="button_papote">On papote ?</button>
+              </a>
+            </div>
           </div>
         </div>
 
@@ -49,33 +55,24 @@ function Home() {
       </div>
 
       <section className="prestations">
-        <h2 className="prestations.title">Mes préstations</h2>
-        <div className="prestations_card_container">
-          {prestation_array.map((presta) => (
-            <Card
-              key={presta.id}
-              title={presta.title}
-              content={presta.content}
-              classname="prestations_card"
-            />
-          ))}
-        </div>
-
-        <Button
-          value={'En savoir plus !'}
-          link_to="/prestations"
-          className="presta_btn"
-        />
+        <h2 className="prestations_title">Mes préstations</h2>
       </section>
+
+      <div className="prestations_card_container">
+        {prestation_array.map((presta) => (
+          <Card
+            key={presta.id}
+            title={presta.title}
+            content={presta.content}
+            /*             picture={presta.picture}
+             */
+          />
+        ))}
+      </div>
 
       <div className="mini_a_propos">
         <h2 className="title_mini_a_propos">Qui se cache derrière Ana ?</h2>
         <div className="mini_a_propos_content">
-          <img
-            src={ana_img}
-            alt="Presentation d'Ana"
-            className="ana_img portrait"
-          />
           <p className="mini_a_propos_p">
             Lectus urna duis convallis convallis. Sagittis vitae et leo duis ut.
             At imperdiet dui accumsan sit amet. Pretium viverra suspendisse
@@ -85,6 +82,13 @@ function Home() {
             urna. Diam maecenas sed enim ut sem viverra. Sit amet consectetur
             adipiscing elit duis...
           </p>
+          <img
+            src={ana_img}
+            alt="Presentation d'Ana"
+            className="ana_img portrait"
+          />
+        </div>
+        <div className="btn_container">
           <Button
             value={'Découvrir Ana'}
             link_to="/a_propos"
@@ -93,14 +97,44 @@ function Home() {
         </div>
       </div>
 
-      <section className="recommendations">
-        <h2 className="recommendations_title">Témoignages</h2>
-        <Slider />
+      <section className="recommandations">
+        <h2 className="recommandations_title">Recommandations</h2>
+        <p className="recommandations_paragraphe">
+          Je vous transmet le meilleur de mes conseil. La bienveillance est au
+          centre de toutes mes séances et votre bien être est ma priorité !
+        </p>
       </section>
-
-      <div id="contact">
-        <h2 className="contact_title">N'hésite pas à me contacter ! </h2>
-        <Contact />
+      <div className="recommandation_PC">
+        <div className="reco">
+          {recommandations_array.map((reco) => (
+            <div className="reco_card">
+              <h3>{reco.title}</h3>
+              <p>{reco.content}</p>
+            </div>
+          ))}
+        </div>
+      </div>
+      <div className="slider_container">
+        <Slider />
+      </div>
+      <div className="call_to_action_contact">
+        <h2 className="call_to_action_contact_title">
+          Envoie moi un petit mot si quelque chose t'intéresse ! ☀️
+        </h2>
+        <p className="call_to_action_contact_content">
+          Lectus urna duis convallis convallis. Sagittis vitae et leo duis ut.
+          At imperdiet dui accumsan sit amet. Pretium viverra suspendisse
+          potenti nullam. In aliquam sem fringilla ut morbi tincidunt augue.
+          Egestas quis ipsum suspendisse ultrices gravida dictum. Ridiculus mus
+          mauris vitae ultricies leo integer.
+        </p>
+        <div className="btn_contact_container">
+          <Button
+            value={'Contacter Ana'}
+            link_to="/contact"
+            className="contact_btn"
+          />
+        </div>
       </div>
     </div>
   );

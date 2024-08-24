@@ -1,19 +1,27 @@
 .button {
   font-family: 'faustina', sans-serif;
-  transition: ease-in-out 0.3s;
-  background-color: #f8f4ef;
-  padding: 10px;
-  border: 2px solid #54361b;
-  border-radius: 30px;
-  color: #54361b;
-  font-size: 14px;
   text-decoration: none;
+  color: #f8f4ef;
+  transition: ease-in-out 0.3s;
+  text-align: center;
+  background-color: #b4b1c6;
+  border: 2px solid #b4b1c6;
+  border-radius: 30px;
+  font-size: 14px;
+  padding: 10px;
+  margin-bottom: 10px;
+  box-shadow:
+    rgba(0, 0, 0, 0.1) 0px 0px 0px 1px,
+    rgba(0, 0, 0, 0.04) 0px 3px 3px,
+    rgba(0, 0, 0, 0.04) 0px 6px 6px,
+    rgba(0, 0, 0, 0.04) 0px 12px 12px;
 }
 
 .button:hover {
+  transform: scale(110%);
   transition: ease-in-out 0.3s;
   cursor: pointer;
-  background-color: #b4b1c6;
-  border: 2px solid #b4b1c6;
-  color: #54361b;
+  background-color: #f8f4ef;
+  color: #6d4820;
+  border: 2px solid #f8f4ef;
 }

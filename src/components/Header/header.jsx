@@ -23,9 +23,16 @@ function Header() {
     setIsMenuClicked(!isMenuClicked);
   }
 
+  function hiddenMenu() {
+    if (isMenuClicked) {
+      setBurgerClass('burger_bar unclicked');
+      setMenuClass('menu hidden');
+    }
+  }
+
   return (
     <div className="headerSection">
-      <Link to="/">
+      <Link to="/" onClick={hiddenMenu}>
         <img src={logo_AK} className="logo_AK" alt="logo AK" />
       </Link>
       <nav className="headerNav">
@@ -43,9 +50,12 @@ function Header() {
         >
           Mes préstations
         </Link>
-        {/*         <a href="../#contact" className="lien_contact">
+        <Link
+          to="/contact"
+          className={location.pathname === '/contact' ? 'lien active' : 'lien'}
+        >
           Contact
-        </a> */}
+        </Link>
       </nav>
 
       <div className="mobile_menu">
@@ -65,13 +75,13 @@ function Header() {
             >
               Mes préstations
             </Link>
-            <a
-              href="../#contact"
-              className="lien_contact lien_mobile"
+            <Link
+              to="/contact"
+              className={'lien lien_mobile'}
               onClick={updateMenu}
             >
               Contact
-            </a>
+            </Link>
           </nav>
         </div>
 
