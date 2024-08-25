@@ -26,6 +26,16 @@
   padding: 10px;
   border: 1px solid #b9a38783;
   border-radius: 10px;
+  animation: FROM_THE_RIGHT 3s ease-in-out;
+}
+
+@keyframes FROM_THE_RIGHT {
+  0% {
+    translate: 100% 0;
+  }
+  100% {
+    translate: 0 0;
+  }
 }
 
 @keyframes MOUVE_X_RIGHT {
