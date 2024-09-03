@@ -11,7 +11,7 @@ function Contact() {
         en a besoins. Alors si tu as des questions ou si tu as besoin
         d'informations complémentaires, envoie moi un message ! C'est avec
         plaisir que nous échangerons sur ce qui t'intéresse en fonction de tes
-        objectifs et disponibilités.🌻
+        objectifs et disponibilités.🌻🌻
       </p>
       <div className="contact_content">
         <ContactForm />
