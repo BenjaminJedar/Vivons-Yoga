@@ -136,6 +136,9 @@ function ContactForm() {
     } else {
       console.log(
         isFirstNameValid,
+        isLastNameValid,
+        isMailValid,
+        isMessageValid,
         "La fonction sendEmail n'est pas déclanché.",
       );
     }
@@ -181,7 +184,7 @@ function ContactForm() {
         isMailValid ||
         isMessageValid === false) && (
         <p style={{ color: 'red' }}>
-          ⚠️ Un des champs n'est pas correctement complété
+          ⚠️ Un des champs n'est pas correctement complété. Veuillez réessayer.
         </p>
       )}
     </form>
