@@ -1,24 +1,25 @@
 {
   "files": {
-    "main.css": "/Vivons-Yoga/static/css/main.7e569cc9.css",
-    "main.js": "/Vivons-Yoga/static/js/main.485ad784.js",
+    "main.css": "/Vivons-Yoga/static/css/main.a8f3b4da.css",
+    "main.js": "/Vivons-Yoga/static/js/main.0cbb9033.js",
     "static/media/Ana_tournesol.jpeg": "/Vivons-Yoga/static/media/Ana_tournesol.f7470a9c0640d7fe0e0e.jpeg",
     "static/media/meditation.jpg": "/Vivons-Yoga/static/media/meditation.670600a930fd5bb964b1.jpg",
     "static/media/Ana.jpeg": "/Vivons-Yoga/static/media/Ana.1928837a4535a9f7b1a9.jpeg",
     "static/media/couverture_prestations_redim.jpg": "/Vivons-Yoga/static/media/couverture_prestations_redim.e2f1b03bdc1ea1e6aef4.jpg",
     "static/media/couverture_prestations_redim_PC.jpg": "/Vivons-Yoga/static/media/couverture_prestations_redim_PC.554ec2ae065eddc63b41.jpg",
     "static/media/logo_AK_removebg1.png": "/Vivons-Yoga/static/media/logo_AK_removebg1.7758f441e86a973f09c7.png",
+    "static/media/fleur.svg": "/Vivons-Yoga/static/media/fleur.e7dc8c010f0c489b74654724e465ff37.svg",
     "static/media/logo_instagram.svg": "/Vivons-Yoga/static/media/logo_instagram.07a690c04d39fcacb4d62d1bc4219858.svg",
     "index.html": "/Vivons-Yoga/index.html",
     "static/media/logo_mail.svg": "/Vivons-Yoga/static/media/logo_mail.616bab6d1045cf02b74ceba715ba4576.svg",
     "static/media/logo_copyright.svg": "/Vivons-Yoga/static/media/logo_copyright.8a9ec737e74730a64fb9e4231235af51.svg",
     "static/media/arrow-right-solid.svg": "/Vivons-Yoga/static/media/arrow-right-solid.b858beecd8ba30518faa957640464961.svg",
     "static/media/arrow-left-solid.svg": "/Vivons-Yoga/static/media/arrow-left-solid.8c8e1029ad0bfaf72ce0fad5773fd7f6.svg",
-    "main.7e569cc9.css.map": "/Vivons-Yoga/static/css/main.7e569cc9.css.map",
-    "main.485ad784.js.map": "/Vivons-Yoga/static/js/main.485ad784.js.map"
+    "main.a8f3b4da.css.map": "/Vivons-Yoga/static/css/main.a8f3b4da.css.map",
+    "main.0cbb9033.js.map": "/Vivons-Yoga/static/js/main.0cbb9033.js.map"
   },
   "entrypoints": [
-    "static/css/main.7e569cc9.css",
-    "static/js/main.485ad784.js"
+    "static/css/main.a8f3b4da.css",
+    "static/js/main.0cbb9033.js"
   ]
 }
