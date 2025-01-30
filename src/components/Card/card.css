@@ -11,9 +11,9 @@
 }
 
 .card:hover {
-  color: #faf2e9;
+  color: #5d4828;
   transition: ease-in-out 0.4s;
-  background-color: #b4b1c6;
+  background-color: #d9c6ab;
 }
 
 .img_card_container {

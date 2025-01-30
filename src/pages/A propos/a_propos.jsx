@@ -8,7 +8,6 @@ function A_propos() {
       <div className="illustration">
         <img src={ana_img} alt="La belle Ana" className="ana_img_a_propos" />
       </div>
-      <h2 className="a_propos_title_page">Salut moi c'est Ana ...</h2>
       <div className="a_propos_content_page">
         <p>
           {' '}

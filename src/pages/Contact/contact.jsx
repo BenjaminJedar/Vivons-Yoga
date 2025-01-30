@@ -1,7 +1,7 @@
 import ContactForm from '../../components/ContactForm/contactForm';
 import './contact.css';
-import img_couverture_prestations from '../../assets/couverture_prestations_redim.jpg';
-import img_couverture_prestations_PC from '../../assets/couverture_prestations_redim_PC.jpg';
+import img_couverture_prestations from '../../assets/foret.jpg';
+import img_couverture_prestations_PC from '../../assets/foret_resize.jpg';
 import fleur from '../../assets/fleur.svg';
 
 function Contact() {

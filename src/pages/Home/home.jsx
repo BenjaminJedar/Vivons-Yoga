@@ -4,6 +4,7 @@ import React /* useEffect, useRef, Suspense */ from 'react';
  */
 import ana_tournesol from '../../assets/Ana_tournesol.jpeg';
 import ana_img from '../../assets/Ana.jpeg';
+import home_illustration from '../../assets/arbres_vu_bas.jpg';
 
 import Button from '../../components/Button/button';
 import Card from '../../components/Card/card';
@@ -46,22 +47,32 @@ function Home() {
           </div>
         </div>
 
-        <p className="home_paragraphe">
-          Ici, pas de posture parfaite ni de performance, juste un espace pour
-          te reconnecter à ton corps, à ton souffle et à tes sensations. Mon
-          approche du yoga est douce et intuitive : elle t’accompagne là où tu
-          en es, selon ton énergie du moment et tes objectifs. À travers la
-          respiration, le mouvement, et parfois la méditation, elle t’apporte
-          aussi les fondements profonds du yoga et de la spiritualité, pour
-          t’offrir bien plus qu’une simple pratique physique, mais un véritable
-          chemin vers l’équilibre intérieur.
-        </p>
+        <div className="home_paragraphe">
+          <h3 className="home_paragraphe_title">
+            Ici, pas de posture parfaite ni de performance.{' '}
+          </h3>
+          <p>
+            Juste un espace pour te reconnecter à ton corps, à ton souffle et à
+            tes sensations. Chaque corps est unique, et mes séances s’adaptent à
+            tes besoins et respectent tes limites. Mon approche du yoga est
+            douce et intuitive : elle t’accompagne là où tu en es, selon ton
+            énergie du moment et tes objectifs.
+          </p>
+        </div>
         <div className="home_citation">
           <p>
-            Chaque corps est unique, et mon approche du yoga fonctionnel en
-            tient compte : mes séances s’adaptent à tes besoins, à ton
-            énergie/mood, et respectent tes limites.
+            À travers la respiration, le mouvement, et parfois la méditation,
+            elle t’apporte aussi les fondements profonds du yoga et de la
+            spiritualité, pour t’offrir bien plus qu’une simple pratique
+            physique, mais un véritable chemin vers l’équilibre intérieur.
           </p>
+        </div>
+        <div className="home_illustration_container">
+          <img
+            src={home_illustration}
+            alt="Pins vu d'en bas"
+            className="home_illustration"
+          />
         </div>
       </div>
 
@@ -107,10 +118,6 @@ function Home() {
 
       <section className="recommandations">
         <h2 className="recommandations_title">Recommandations</h2>
-        <p className="recommandations_paragraphe">
-          Je vous transmet le meilleur de mes conseil. La bienveillance est au
-          centre de toutes mes séances et votre bien être est ma priorité !
-        </p>
       </section>
       <div className="recommandation_PC">
         <div className="reco">
@@ -127,15 +134,9 @@ function Home() {
       </div>
       <div className="call_to_action_contact">
         <h2 className="call_to_action_contact_title">
-          Envoie moi un petit mot si quelque chose t'intéresse ! ☀️
+          Envoie moi un petit mot si quelque chose t'intéresse !
         </h2>
-        <p className="call_to_action_contact_content">
-          Lectus urna duis convallis convallis. Sagittis vitae et leo duis ut.
-          At imperdiet dui accumsan sit amet. Pretium viverra suspendisse
-          potenti nullam. In aliquam sem fringilla ut morbi tincidunt augue.
-          Egestas quis ipsum suspendisse ultrices gravida dictum. Ridiculus mus
-          mauris vitae ultricies leo integer.
-        </p>
+
         <div className="btn_contact_container">
           <Button
             value={'Contacter Ana'}

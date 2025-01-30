@@ -122,6 +122,14 @@ h3 {
   display: none;
 }
 
+.home_illustration_container {
+  display: none;
+}
+
+.home_illustration {
+  display: none;
+}
+
 /* .return_to_home {
   position: sticky;
   position: -webkit-sticky;
@@ -135,7 +143,7 @@ h3 {
 } */
 
 .prestations_title {
-  margin-bottom: 20px;
+  margin-bottom: 0 0 20px 0;
 }
 
 .prestations_card_container {
@@ -236,12 +244,15 @@ h3 {
 
 @media screen and (max-width: 767px) {
   .accueil,
-  .prestations,
   .mini_a_propos,
   .recommendations,
   .call_to_action_contact {
     margin: 0;
-    padding: 50px 20px;
+    padding: 50px 20px 0 20px;
+  }
+
+  .prestations {
+    padding: 0px 20px 0 20px;
   }
 
   h1 {
@@ -287,7 +298,7 @@ h3 {
 
   .home_paragraphe {
     margin: 40px -20px 0 -20px;
-    padding: 50px;
+    padding: 40px;
     height: 100%;
     border-radius: 0;
     /*=======Masque pour effet vague=======*/
@@ -311,11 +322,25 @@ h3 {
     align-items: center;
     text-align: center;
     margin: 0 -20px;
+    padding: 40px;
   }
 
   .home_citation p {
     display: inherit;
     padding: 0;
+  }
+
+  .home_illustration_container {
+    display: flex;
+    justify-content: center;
+    padding: 20px 0;
+  }
+
+  .home_illustration {
+    display: inherit;
+    filter: brightness(80%);
+    border-radius: 10px;
+    width: 100%;
   }
 
   .prestations_title {
@@ -326,7 +351,7 @@ h3 {
     flex-direction: column;
     margin-bottom: 0;
     padding: 0 30px;
-    margin-top: -50px;
+    margin-top: 0px;
   }
 
   .prestations_card {
