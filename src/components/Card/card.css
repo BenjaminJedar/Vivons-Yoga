@@ -11,7 +11,7 @@
 }
 
 .card:hover {
-  color: #f8f4ef;
+  color: #faf2e9;
   transition: ease-in-out 0.4s;
   background-color: #b4b1c6;
 }
@@ -41,6 +41,7 @@
   }
 
   .card {
+    background-color: #ece2d5;
     width: 100%;
     height: 30%;
   }

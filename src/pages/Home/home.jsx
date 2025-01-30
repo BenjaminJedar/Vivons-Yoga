@@ -26,14 +26,17 @@ function Home() {
           </div>
           <div className="intro_txt">
             <h1 className="title">
-              <span>Ana Kuzelj</span> <br /> Professeure de yoga fonctionnel
+              <span>Ana,</span>{' '}
+              <em className="italic_mode">professeure de yoga fonctionnel</em>
             </h1>
             <p className="presentation">
-              Petite phrase de présentation de Yoga avec Ana ! Lorem ipsum dolor
-              sit amet, consectetur adipiscing elit, sed do eiusmod tempor
-              incididunt ut labore et dolore magna aliqua. Ut enim ad minim
-              veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-              ex ea commodo consequat.
+              Besoin de ralentir, d’un moment pour toi ? Envie d’un flow plus
+              dynamique pour réveiller ton énergie et gagner en force ? Ou
+              peut-être envie de débloquer des tensions pour gagner en souplesse
+              ? Je suis là pour te guider et t’encourager avec bienveillance.
+              Retrouve-moi entre Montpellier et Nîmes, en présentiel ou en
+              ligne, et laisse-toi emporter par un yoga qui te fait du bien, à
+              ton rythme, et en profondeur.
             </p>
             <div className="button_papote_container">
               <a href="mailto:vivons-yoga@hotmail.com">
@@ -44,14 +47,22 @@ function Home() {
         </div>
 
         <p className="home_paragraphe">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-          minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-          aliquip ex ea commodo consequat. Duis aute irure dolor in
-          reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-          pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-          culpa qui officia deserunt mollit anim id est laborum.
+          Ici, pas de posture parfaite ni de performance, juste un espace pour
+          te reconnecter à ton corps, à ton souffle et à tes sensations. Mon
+          approche du yoga est douce et intuitive : elle t’accompagne là où tu
+          en es, selon ton énergie du moment et tes objectifs. À travers la
+          respiration, le mouvement, et parfois la méditation, elle t’apporte
+          aussi les fondements profonds du yoga et de la spiritualité, pour
+          t’offrir bien plus qu’une simple pratique physique, mais un véritable
+          chemin vers l’équilibre intérieur.
         </p>
+        <div className="home_citation">
+          <p>
+            Chaque corps est unique, et mon approche du yoga fonctionnel en
+            tient compte : mes séances s’adaptent à tes besoins, à ton
+            énergie/mood, et respectent tes limites.
+          </p>
+        </div>
       </div>
 
       <section className="prestations">
@@ -74,13 +85,10 @@ function Home() {
         <h2 className="title_mini_a_propos">Qui se cache derrière Ana ?</h2>
         <div className="mini_a_propos_content">
           <p className="mini_a_propos_p">
-            Lectus urna duis convallis convallis. Sagittis vitae et leo duis ut.
-            At imperdiet dui accumsan sit amet. Pretium viverra suspendisse
-            potenti nullam. In aliquam sem fringilla ut morbi tincidunt augue.
-            Egestas quis ipsum suspendisse ultrices gravida dictum. Ridiculus
-            mus mauris vitae ultricies leo integer. Enim sit amet venenatis
-            urna. Diam maecenas sed enim ut sem viverra. Sit amet consectetur
-            adipiscing elit duis...
+            Depuis que j'ai découvert la spiritualité, ainsi qu’une autre
+            manière de vivre en Thaïlande, je me suis tourné petit à petit vers
+            le yoga. C’est ce qui me permet aujourd’hui de vivre en pleine
+            conscience et en harmonie...
           </p>
           <img
             src={ana_img}

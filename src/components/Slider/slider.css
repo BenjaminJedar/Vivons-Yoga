@@ -10,12 +10,12 @@
 
 .right_arrow {
   margin: 0 10px;
-  animation: MOUVE_X_RIGHT 3s ease-in-out infinite;
+  /*  animation: MOUVE_X_RIGHT 3s ease-in-out infinite;*/
 }
 
 .left_arrow {
   margin: 0 10px;
-  animation: MOUVE_X_LEFT 3s ease-in-out infinite;
+  /*  animation: MOUVE_X_LEFT 3s ease-in-out infinite;*/
 }
 
 .arrow:hover {

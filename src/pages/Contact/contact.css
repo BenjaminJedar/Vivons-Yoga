@@ -1,9 +1,8 @@
 .contact_page {
   font-family: 'faustina', sans-serif;
-  background-color: #f8f4ef;
-  color: #6d4820;
-  margin: 0;
-  padding: 0 50px;
+  background-color: #faf2e9;
+  color: #5d4828;
+  padding: 0 200px 50px 200px;
 }
 
 .contact_content {
@@ -15,8 +14,31 @@
   padding: 20px 0;
 }
 
+.fleur_dessin {
+  display: none;
+}
+
 @media screen and (max-width: 767px) {
   .contact_page {
-    padding: 0 10px;
+    padding: 0 20px 50px 20px;
+  }
+
+  .img_presta_container {
+    padding: 50px 0 20px 0;
+  }
+
+  .contact_title {
+    margin: 0;
+    padding: 15px 0 10px 0;
+  }
+  .contact_paragraphe {
+    margin: 0;
+    padding: 0 0 30px 0;
+  }
+
+  .fleur_dessin {
+    display: inherit;
+    height: 50px;
+    padding-left: 50%;
   }
 }
